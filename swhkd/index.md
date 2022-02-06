@@ -17,7 +17,7 @@ title: swhkd
   </p>
 </p>
 
-## SWHKD
+## SWHKD [(GitHub)](https://github.com/waycrate/swhkd)
 
 **S**imple **W**ayland **H**ot**K**ey **D**aemon
 
