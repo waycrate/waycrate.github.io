@@ -8,9 +8,5 @@
     "serve": "npx eleventy --serve",
     "debug": "DEBUG=* npx eleventy",
     "test": "jest"
-  },
-
-  "dependencies": {
-    "@11ty/eleventy": "github:11ty/eleventy"
   }
 }
