@@ -1,4 +1,4 @@
-# waycrate.github.io
+# [waycrate.github.io](https://waycrate.github.io/)
 
 The site for the Waycrate organization, built with the
 [Eleventy](https://www.11ty.dev/) static site generator.
