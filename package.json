@@ -1,4 +1,14 @@
 {
+  "name": "waycrate-website",
+  "version": "1.0.0",
+  "description": "The website for Waycrate",
+
+  "scripts": {
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy",
+    "test": "jest",
+
   "dependencies": {
     "@11ty/eleventy": "github:11ty/eleventy"
   }
