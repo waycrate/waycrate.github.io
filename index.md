@@ -3,19 +3,20 @@ layout: layout.njk
 title: Home
 ---
 
-<h2>Welcome to Waycrate.</h2>
-<p>We create tools that are suckless in nature for the Wayland protocol in rust.</p>
+## Welcome to Waycrate.
 
-<p>Currently, we are developing <a href="{{ '/swhkd' | url }}">swhkd</a>, a hotkey daemon that's a
+We create tools that are suckless in nature for the Wayland protocol in rust.
+
+Currently, we are developing [swhkd]("{{ '/swhkd' | url }}"), a hotkey daemon that's a
 replacement for sxhkd. It aims to work across Wayland, Xorg and even
-tty.</p>
+tty.
 
-<h3>Contributing</h3>
+### Contributing
 
-<p>We are accepting more contributors to our organization. If you are
-interested, join our <a href="https://discord.gg/KKZRDYrRYW">Discord server</a>.</p>
+We are accepting more contributors to our organization. If you are
+interested, join our [Discord server](https://discord.gg/KKZRDYrRYW).
 
-<h3>Our Team</h3>
+### Our Team
 
 <div class="members">
   <div class="member">
