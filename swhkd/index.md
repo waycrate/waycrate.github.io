@@ -4,7 +4,7 @@ title: swhkd
 ---
 
 <p align=center>
-  <img src="/assets/img/swhkd.png" alt=SWHKD width=60%>
+  <img src="{{ '/assets/img/swhkd.png' | url }}" alt=SWHKD width=60%>
   
   <p align=center>A next-generation hotkey daemon for Wayland/X11 written in Rust.</p>
   
@@ -31,7 +31,7 @@ Because swhkd can be used anywhere, the same swhkd config can be used across Xor
 
 ## Installation
 
-See [INSTALL.md](./INSTALL) for installing swhkd.
+See the [install guide]({{ './install' | url }}) for installing swhkd.
 
 ## Running:
 
@@ -39,7 +39,7 @@ See [INSTALL.md](./INSTALL) for installing swhkd.
 
 ## Support server:
 
-https://discord.gg/KKZRDYrRYW
+[Discord](https://discord.gg/KKZRDYrRYW)
 
 ## Contributors:
 
