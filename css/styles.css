@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+html {
+  color: #1B1B1B;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 18px;
+}
+
+:root {
+  --wayland-yellow: #F4B60B;
+}
+
+#container {
+  max-width: 850px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: flex-start;
+  padding: 0 3%;
+}
+
+.logo img {
+  max-width: 150px;
+  margin: auto;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.content__logo {
+  width: 360px;
+  max-width: 90vw;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul ul li:before {
+  content: "- ";
+  color: var(--wayland-yellow);
+}
+
+.active {
+  font-weight: 700;
+}
+
+a {
+  color: var(--wayland-yellow);
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.member {
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member a {
+  border: none;
+}
+
+.member img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+@media all and (max-width: 600px) {
+  #container {
+    margin: 15px 0;
+    gap: 0;
+  }
+
+  header {
+    width: 100%;
+    text-align: center;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
