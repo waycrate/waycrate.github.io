@@ -29,6 +29,10 @@ html {
   max-width: 600px;
 }
 
+.content__logo {
+  max-width: 360px;
+}
+
 ul {
   padding: 0;
 }
