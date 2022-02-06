@@ -72,3 +72,21 @@ a {
   max-width: 100px;
   border-radius: 50%;
 }
+
+@media all and (max-width: 600px) {
+  #container {
+    margin: 15px 0;
+    gap: 0;
+  }
+
+  header {
+    width: 100%;
+    text-align: center;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
