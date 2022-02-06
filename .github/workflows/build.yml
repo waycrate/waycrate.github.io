@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies & build
         run: |
-          npm install eleventy
+          npm install @11ty/eleventy
           npm run build
 
       - name: Deploy
