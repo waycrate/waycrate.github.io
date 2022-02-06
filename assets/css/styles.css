@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+html {
+  color: #1B1B1B;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 18px;
+}
+
+:root {
+  --wayland-yellow: #F4B60B;
+}
+
+#container {
+  max-width: 850px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 0 3%;
+}
+
+.logo img {
+  max-width: 200px;
+}
+
+.content {
+  max-width: 600px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.active {
+  font-weight: 700;
+}
+
+a {
+  color: var(--wayland-yellow);
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
