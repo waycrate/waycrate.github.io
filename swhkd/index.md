@@ -1,7 +1,6 @@
 ---
 layout: layout.njk
 title: swhkd
-active: swhkd
 ---
 
 <p align=center>
@@ -32,7 +31,7 @@ Because swhkd can be used anywhere, the same swhkd config can be used across Xor
 
 ## Installation
 
-See [INSTALL.md](./docs/INSTALL.md) for installing swhkd.
+See [INSTALL.md](./INSTALL) for installing swhkd.
 
 ## Running:
 

@@ -33,7 +33,10 @@ active: Home
 
         <nav>
           <ul>
-            <li {% if title == "swhkd" %}class="active"{% endif %}><a href="/swhkd/#">swhkd</a></li>
+            <li {% if title == "swhkd" %}class="active"{% endif %}><a href="/swhkd/">swhkd</a></li>
+            <ul>
+                <li {% if title == "install" %}class="active"{% endif %}><a href="/swhkd/install">install</a></li>
+            </ul>
           </ul>
         </nav>
       </header>

@@ -42,6 +42,11 @@ li {
   list-style-type: none;
 }
 
+ul ul li:before {
+  content: "- ";
+  color: var(--wayland-yellow);
+}
+
 .active {
   font-weight: 700;
 }
