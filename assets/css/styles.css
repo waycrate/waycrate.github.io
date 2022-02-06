@@ -59,10 +59,10 @@ a {
 }
 
 .member {
+  width: 110px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
 }
 
 .member a {
