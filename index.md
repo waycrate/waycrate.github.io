@@ -7,7 +7,7 @@ title: Home
 
 We create tools that are suckless in nature for the Wayland protocol in rust.
 
-Currently, we are developing [swhkd]("https://github.com/waycrate/swhkd"), a hotkey daemon that's a
+Currently, we are developing [swhkd](https://github.com/waycrate/swhkd), a hotkey daemon that's a
 replacement for sxhkd. It aims to work across Wayland, Xorg and even
 tty.
 
