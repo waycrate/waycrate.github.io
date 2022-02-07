@@ -34,7 +34,7 @@ interested, join our [Discord server](https://discord.gg/KKZRDYrRYW).
   </div>
 
   <div class="member">
-    <a href="http://edenqwq.github.io/">
+    <a href="http://edenqwq.netlify.app/">
       <img src="https://avatars.githubusercontent.com/u/62473844?s=300" alt="Eden">
     </a>
     Eden
