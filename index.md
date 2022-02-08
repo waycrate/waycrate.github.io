@@ -5,7 +5,7 @@ title: Home
 
 ## Welcome to Waycrate.
 
-We create tools that are suckless in nature for the Wayland protocol in rust.
+We create tools that are suckless in nature for the Wayland protocol in Rust.
 
 Currently, we are developing [swhkd](https://github.com/waycrate/swhkd), a hotkey daemon that's a
 replacement for sxhkd. It aims to work across Wayland, Xorg and even
@@ -41,7 +41,7 @@ interested, join our [Discord server](https://discord.gg/KKZRDYrRYW).
   </div>
 
   <div class="member">
-    <a href="https://github.com/Idlidev">
+    <a href="https://rvdev.codes">
       <img src="https://avatars.githubusercontent.com/u/69449141?s=300" alt="Idli">
     </a>
     Idli
