@@ -10,7 +10,7 @@ title: swhkd
   
   <p align="center">
   <img src="https://img.shields.io/github/license/waycrate/swhkd?style=flat-square&logo=appveyor">
-  <img src="https://img.shields.io/badge/cargo-v0.1.0-green?style=flat-square&logo=appveyor">
+  <img src="https://img.shields.io/badge/cargo-v1.0.0-green?style=flat-square&logo=appveyor">
   <img src="https://img.shields.io/github/issues/waycrate/swhkd?style=flat-square&logo=appveyor">
   <img src="https://img.shields.io/github/forks/waycrate/swhkd?style=flat-square&logo=appveyor">
   <img src="https://img.shields.io/github/stars/waycrate/swhkd?style=flat-square&logo=appveyor">
@@ -23,19 +23,35 @@ title: swhkd
 
 swhkd is a display protocol-independent hotkey daemon made in Rust. swhkd uses an easy-to-use configuration system inspired by sxhkd so you can easily add or remove hotkeys.
 
-It also attempts to be a drop-in replacement for sxhkd, meaning that your sxhkd config file is also compatible with swhkd.
+It also attempts to be a drop-in replacement for sxhkd, meaning, your sxhkd config file is also compatible with swhkd.
 
 Because swhkd can be used anywhere, the same swhkd config can be used across Xorg or Wayland desktops, and you can even use swhkd in a tty.
 
-**Note: The project isn't complete yet.**
+**Note: The project is a WIP.**
+**BUT!! It does work right now however it's not a drop-in replacement yet. [Example config file](https://github.com/waycrate/swhkd/blob/main/docs/swhkdrc).**
 
 ## Installation
 
 See the [install guide]({{ './install' | url }}) for installing swhkd.
 
 ## Running:
+```bash
+swhks &
+pkexec swhkd
+```
+To refresh the config at runtime, make a script like so:
 
-`pkexec swhkd`
+```bash
+#!/bin/sh
+sudo killall swhkd
+pkexec swhkd
+```
+
+Mark it as executeable using `chmod +x <path_to_refresh_script>`.
+
+Then call it using `setsid -f <path_to_refresh_script>`. 
+
+A better implementation using signals will be developed later.
 
 ## Support server:
 

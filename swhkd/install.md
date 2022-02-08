@@ -2,6 +2,8 @@
 layout: layout.njk
 title: install
 ---
+# AUR:
+`swhkd-git` `swhkd-musl-git` have been packaged. `swhkd-bin` & `swhkd-musl-bin` will be released soon.
 
 ## Installation
 
@@ -28,5 +30,5 @@ title: install
 -   `sudo make install`
 
 # Running:
-
+`swhks`
 `pkexec swhkd`
