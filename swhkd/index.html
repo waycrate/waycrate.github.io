@@ -43,7 +43,7 @@
   <p align=center>A next-generation hotkey daemon for Wayland/X11 written in Rust.</p>
   <p align="center">
   <img src="https://img.shields.io/github/license/waycrate/swhkd?style=flat-square&logo=appveyor">
-  <img src="https://img.shields.io/badge/cargo-v0.1.0-green?style=flat-square&logo=appveyor">
+  <img src="https://img.shields.io/badge/cargo-v1.0.0-green?style=flat-square&logo=appveyor">
   <img src="https://img.shields.io/github/issues/waycrate/swhkd?style=flat-square&logo=appveyor">
   <img src="https://img.shields.io/github/forks/waycrate/swhkd?style=flat-square&logo=appveyor">
   <img src="https://img.shields.io/github/stars/waycrate/swhkd?style=flat-square&logo=appveyor">
@@ -52,13 +52,24 @@
 <h2>SWHKD <a href="https://github.com/waycrate/swhkd">(GitHub)</a></h2>
 <p><strong>S</strong>imple <strong>W</strong>ayland <strong>H</strong>ot<strong>K</strong>ey <strong>D</strong>aemon</p>
 <p>swhkd is a display protocol-independent hotkey daemon made in Rust. swhkd uses an easy-to-use configuration system inspired by sxhkd so you can easily add or remove hotkeys.</p>
-<p>It also attempts to be a drop-in replacement for sxhkd, meaning that your sxhkd config file is also compatible with swhkd.</p>
+<p>It also attempts to be a drop-in replacement for sxhkd, meaning, your sxhkd config file is also compatible with swhkd.</p>
 <p>Because swhkd can be used anywhere, the same swhkd config can be used across Xorg or Wayland desktops, and you can even use swhkd in a tty.</p>
-<p><strong>Note: The project isn't complete yet.</strong></p>
+<p><strong>Note: The project is a WIP.</strong>
+<strong>BUT!! It does work right now however it's not a drop-in replacement yet. <a href="https://github.com/waycrate/swhkd/blob/main/docs/swhkdrc">Example config file</a>.</strong></p>
 <h2>Installation</h2>
 <p>See the <a href="install">install guide</a> for installing swhkd.</p>
 <h2>Running:</h2>
-<p><code>pkexec swhkd</code></p>
+<pre><code class="language-bash">swhks &amp;
+pkexec swhkd
+</code></pre>
+<p>To refresh the config at runtime, make a script like so:</p>
+<pre><code class="language-bash">#!/bin/sh
+sudo killall swhkd
+pkexec swhkd
+</code></pre>
+<p>Mark it as executeable using <code>chmod +x &lt;path_to_refresh_script&gt;</code>.</p>
+<p>Then call it using <code>setsid -f &lt;path_to_refresh_script&gt;</code>.</p>
+<p>A better implementation using signals will be developed later.</p>
 <h2>Support server:</h2>
 <p><a href="https://discord.gg/KKZRDYrRYW">Discord</a></p>
 <h2>Contributors:</h2>
