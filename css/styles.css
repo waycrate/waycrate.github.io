@@ -96,3 +96,19 @@ a {
     gap: 20px;
   }
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--wayland-yellow);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dda813;
+}
