@@ -1,14 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
 
 html {
-  color: #1B1B1B;
-  background-color: #f5f5f5;
-  font-family: 'Ubuntu Mono', monospace;
   font-size: 18px;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+body {
+  color: var(--fg);
+  background-color: var(--bg);
+}
+
+body.dark {
+  color: var(--dark-fg);
+  background-color: var(--dark-bg);
 }
 
 :root {
   --wayland-yellow: #F4B60B;
+  --bg: #f5f5f5;
+  --fg: #1B1B1B;
+  --dark-fg: #E5E5E5;
+  --dark-bg: #262626;
 }
 
 #container {
@@ -78,6 +90,27 @@ a {
 .member img {
   max-width: 100px;
   border-radius: 50%;
+}
+
+.dark-mode-toggle {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  height: 8px;
+  color: inherit;
+}
+
+.dark-mode-toggle .fa-toggle-on {
+  display: none;
+}
+
+.dark .dark-mode-toggle .fa-toggle-on {
+  display: inline;
+}
+
+.dark .dark-mode-toggle .fa-toggle-off {
+  display: none;
 }
 
 @media all and (max-width: 600px) {
