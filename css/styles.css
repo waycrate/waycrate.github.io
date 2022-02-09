@@ -33,6 +33,13 @@ body.dark {
   padding: 0 3%;
 }
 
+.fa-solid, .fa-brands {
+  color: inherit;
+  font-size: 0.8em;
+  text-align: center;
+  width: 1.1em;
+}
+
 .logo img {
   max-width: 150px;
   margin: auto;
@@ -96,9 +103,12 @@ a {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  font-size: 20px;
   height: 21px;
   color: inherit;
+}
+
+.dark-mode-toggle i {
+  font-size: 20px;
 }
 
 .dark-mode-toggle .fa-toggle-on {
