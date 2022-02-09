@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: install
+title: Install
 ---
 # AUR:
 `swhkd-git` `swhkd-musl-git` have been packaged. `swhkd-bin` & `swhkd-musl-bin` will be released soon.
