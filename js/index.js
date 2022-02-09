@@ -17,7 +17,7 @@ if (currentTheme == "dark") {
  
 darkModeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
-  
+
   let theme = "light";
   if (document.body.classList.contains("dark")) {
     theme = "dark";
