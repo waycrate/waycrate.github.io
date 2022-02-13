@@ -33,6 +33,10 @@ body.dark {
   padding: 0 3%;
 }
 
+header nav ul li {
+  margin: 2px 0;
+}
+
 .fa-solid, .fa-brands {
   color: inherit;
   font-size: 0.8em;
