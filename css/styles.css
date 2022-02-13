@@ -13,6 +13,7 @@ body {
 body.dark {
   color: var(--dark-fg);
   background-color: var(--dark-bg);
+  --code-block: #363636;
 }
 
 :root {
@@ -21,6 +22,7 @@ body.dark {
   --fg: #1B1B1B;
   --dark-fg: #E5E5E5;
   --dark-bg: #262626;
+  --code-block: #E7E7E7;
 }
 
 #container {
@@ -85,8 +87,27 @@ a {
   border-bottom: 1px dashed;
 }
 
+code {
+  font-family: "Ubuntu Mono", monospace;
+  display: inline-block;
+  background-color: var(--code-block);
+  border-radius: 5px;
+  padding: 0.2em;
+  margin: 3px 0;
+}
+
 pre {
   white-space: normal;
+  background-color: var(--code-block);
+  padding: 0.6em;
+  border-radius: 5px;
+}
+
+pre code {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .members {
