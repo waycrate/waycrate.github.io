@@ -65,6 +65,10 @@ img {
   max-width: 95vw;
 }
 
+body.dark img {
+  filter: brightness(.9) contrast(1.1);
+}
+
 ul {
   padding: 0;
 }
