@@ -14,10 +14,11 @@ body.dark {
   color: var(--dark-fg);
   background-color: var(--dark-bg);
   --code-block: #363636;
+  --wayland-yellow: #F4B60B;
 }
 
 :root {
-  --wayland-yellow: #F4B60B;
+  --wayland-yellow: #E9AB00;
   --bg: #f5f5f5;
   --fg: #1B1B1B;
   --dark-fg: #E5E5E5;
