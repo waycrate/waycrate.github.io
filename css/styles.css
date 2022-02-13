@@ -145,6 +145,10 @@ pre code {
   color: inherit;
 }
 
+.dark-mode-toggle:focus {
+  outline: none;
+}
+
 .dark-mode-toggle i {
   font-size: 20px;
 }
