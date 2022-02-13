@@ -54,6 +54,10 @@ body.dark {
   max-width: 90vw;
 }
 
+img {
+  max-width: 95vw;
+}
+
 ul {
   padding: 0;
 }
