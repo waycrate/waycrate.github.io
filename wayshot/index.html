@@ -45,7 +45,8 @@
       <div class="content">
         <p align=center>
   <img src="/assets/img/wayshot.png" alt=wayshot width=60%>
-  <p align=center>A native screenshot tool for Wayland (X11 support coming soon) written in Rust. <a href="https://github.com/waycrate/wayshot">GitHub</a></p>
+  <p align=center>A native screenshot tool for wlroots based compositors such as
+  sway and river written in Rust. X11 support coming soon. <a href="https://git.sr.ht/~shinyzenith/wayshot">sourcehut</a></p>
   <p align="center">
   <img src="https://img.shields.io/github/license/waycrate/wayshot?style=flat-square&logo=appveyor">
   <img src="https://img.shields.io/badge/cargo-v1.0.0-green?style=flat-square&logo=appveyor">
@@ -57,19 +58,22 @@
 <h1>Usage:</h1>
 <p><strong>Note: The project is a WIP.</strong></p>
 <p>Region Selection:</p>
-<pre><code class="language-bash">wayshot -s &quot;$(slurp -f '%x %y %w %h')&quot; &gt; /tmp/image.png
+<pre><code class="language-bash">wayshot -s &quot;$(slurp -f '%x %y %w %h')&quot;
 </code></pre>
 <p>Fullscreen:</p>
-<pre><code class="language-bash">wayshot &gt; /tmp/image.png
+<pre><code class="language-bash">wayshot
+</code></pre>
+<p>Custom file path:</p>
+<pre><code class="language-bash">wayshot -f ../screenshot.png
 </code></pre>
 <p>Screenshot and copy to clipboard:</p>
-<pre><code class="language-bash">wayshot | wl-copy
+<pre><code class="language-bash">wayshot --stdout | wl-copy
 </code></pre>
 <p>Pick a hex color code, using ImageMagick:</p>
-<pre><code class="language-bash">wayshot -s &quot;$(slurp -p -f '%x %y %w %h')&quot; | convert - -format '%[pixel:p{0,0}]' txt:-|egrep &quot;#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})&quot; -o
+<pre><code class="language-bash">wayshot -s &quot;$(slurp -p -f '%x %y %w %h')&quot; --stdout | convert - -format '%[pixel:p{0,0}]' txt:-|egrep &quot;#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})&quot; -o
 </code></pre>
 <p>Pick a color, using ImageMagick:</p>
-<pre><code class="language-bash">wayshot -s &quot;$(slurp -p -f '%x %y %w %h')&quot; | convert - -format '%[pixel:p{0,0}]' txt:-
+<pre><code class="language-bash">wayshot -s &quot;$(slurp -p -f '%x %y %w %h')&quot; --stdout | convert - -format '%[pixel:p{0,0}]' txt:-
 </code></pre>
 <h1>Installation</h1>
 <h2>AUR:</h2>
@@ -83,22 +87,14 @@
 <ul>
 <li><code>git clone https://github.com/waycrate/wayshot &amp;&amp; cd wayshot</code></li>
 <li><code>make setup</code></li>
-<li><code>make clean</code>
-<ul>
 <li><code>make</code></li>
-<li><code>make glibc</code></li>
-</ul>
-</li>
 <li><code>sudo make install</code></li>
 </ul>
 <h1>Support server:</h1>
-<p><a href="https://discord.gg/KKZRDYrRYW">Discord</a></p>
-<h1>Contributors:</h1>
-<a href="https://github.com/waycrate/wayshot/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=waycrate/wayshot" />
-</a>
-<h1>Cmeissl:</h1>
-<p>Massive thanks to Smithay contributor <a href="%22https://github.com/cmeissl%22">Cmeissl</a>. Without them this project won't be possible as my wayland knowledge is very very limited.</p>
+<p>1 - Use the mailing list.</p>
+<p>2 - I don't endorse the usage of Discord but if you really need it, then you can join the following <a href="https://discord.gg/KKZRDYrRYW">server</a> for support.</p>
+<h1>Smithay Developers:</h1>
+<p>Massive thanks to smithay developer <a href="https://github.com/cmeissl">Cmeissl</a> and <a href="https://github.com/vberger">Victor Berger</a>. Without them this project won't be possible as my wayland knowledge is limited.</p>
 
       </div>
     </div>
