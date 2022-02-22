@@ -69,7 +69,7 @@ wayshot -s "$(slurp -p -f '%x %y %w %h')" --stdout | convert - -format '%[pixel:
 -   `make`
 -   `sudo make install`
 
-# Support server:
+# Support:
 
 1 - Use the mailing list.
 
