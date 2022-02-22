@@ -19,8 +19,6 @@ title: Wayshot
 
 # Usage:
 
-**Note: The project is a WIP.**
-
 Region Selection:
 
 ```bash
