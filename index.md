@@ -16,6 +16,11 @@ tty.
 We are accepting more contributors to our organization. If you are
 interested, join our [Discord server](https://discord.gg/KKZRDYrRYW).
 
+### Our Supporters
+
+We are proudly supported by [Source Hut](https://sr.ht/), who has given us
+free hosting for our projects.
+
 ### Our Team
 
 <div class="members">
