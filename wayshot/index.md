@@ -10,7 +10,7 @@ title: Wayshot
   
   <p align="center">
   <img src="https://img.shields.io/github/license/waycrate/wayshot?style=flat-square&logo=appveyor">
-  <img src="https://img.shields.io/badge/cargo-v1.1.0-green?style=flat-square&logo=appveyor">
+  <img src="https://img.shields.io/badge/cargo-v1.1.2-green?style=flat-square&logo=appveyor">
   <img src="https://img.shields.io/github/issues/waycrate/wayshot?style=flat-square&logo=appveyor">
   <img src="https://img.shields.io/github/forks/waycrate/wayshot?style=flat-square&logo=appveyor">
   <img src="https://img.shields.io/github/stars/waycrate/wayshot?style=flat-square&logo=appveyor">
