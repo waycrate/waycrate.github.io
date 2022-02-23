@@ -10,7 +10,7 @@ title: Wayshot
   
   <p align="center">
   <img src="https://img.shields.io/github/license/waycrate/wayshot?style=flat-square&logo=appveyor">
-  <img src="https://img.shields.io/badge/cargo-v1.0.0-green?style=flat-square&logo=appveyor">
+  <img src="https://img.shields.io/badge/cargo-v1.1.2-green?style=flat-square&logo=appveyor">
   <img src="https://img.shields.io/github/issues/waycrate/wayshot?style=flat-square&logo=appveyor">
   <img src="https://img.shields.io/github/forks/waycrate/wayshot?style=flat-square&logo=appveyor">
   <img src="https://img.shields.io/github/stars/waycrate/wayshot?style=flat-square&logo=appveyor">
@@ -18,8 +18,6 @@ title: Wayshot
 </p>
 
 # Usage:
-
-**Note: The project is a WIP.**
 
 Region Selection:
 
@@ -36,7 +34,7 @@ wayshot
 Custom file path:
 
 ```bash
-wayshot -f ../screenshot.png
+wayshot -f ../screenshot.png --extension jpg
 ```
 
 Screenshot and copy to clipboard:
@@ -59,7 +57,7 @@ wayshot -s "$(slurp -p -f '%x %y %w %h')" --stdout | convert - -format '%[pixel:
 # Installation
 
 ## AUR:
-`wayshot-git` has been packaged. `wayshot-bin` will be released soon.
+`wayshot-git` & `wayshot-bin` has been packaged.
 
 ## Compile time dependencies:
 -   rustup
@@ -71,7 +69,7 @@ wayshot -s "$(slurp -p -f '%x %y %w %h')" --stdout | convert - -format '%[pixel:
 -   `make`
 -   `sudo make install`
 
-# Support server:
+# Support:
 
 1 - Use the mailing list.
 
