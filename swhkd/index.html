@@ -77,6 +77,9 @@ pkexec swhkd
 <p>Mark it as executeable using <code>chmod +x &lt;path_to_refresh_script&gt;</code>.</p>
 <p>Then call it using <code>setsid -f &lt;path_to_refresh_script&gt;</code>.</p>
 <p>A better implementation using signals will be developed later.</p>
+<h2>Configuration</h2>
+<p>Swhkd closely follows sxhkd syntax, so most existing sxhkd configs should be functional with swhkd.</p>
+<p>The default configuration directory is <code>/etc/swhkd/swhkdrc</code>. If you don't like having to edit the file as root every single time, you can create a symlink from <code>~/.config/swhkd/swhkdrc</code> to <code>/etc/swhkd/swhkdrc</code>.</p>
 <h2>Support server:</h2>
 <p><a href="https://discord.gg/KKZRDYrRYW">Discord</a></p>
 <h2>Contributors:</h2>
