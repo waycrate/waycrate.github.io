@@ -4,7 +4,8 @@ title: Wayout
 ---
 <p align=center>
   <img src="{{ '/assets/img/wayout.png' | url }}" alt=wayout width=60%>
-  <p align=center>A simple output management tool for wlroots based compositors implementing zwlr_output_power_management_v1</p>
+  <p align=center>A simple output management tool for wlroots based compositors
+  implementing zwlr_output_power_management_v1. <a href="https://git.sr.ht/~shinyzenith/wayout">sourcehut</a></p>
   
   <p align="center">
   <img src="https://img.shields.io/github/license/waycrate/wayout?style=flat-square&logo=appveyor">
