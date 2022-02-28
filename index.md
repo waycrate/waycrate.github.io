@@ -46,6 +46,13 @@ free hosting for our projects.
   </div>
 
   <div class="member">
+    <a href="https://github.com/vainiovano">
+      <img src="https://avatars.githubusercontent.com/u/16741932?s=300" alt="Eden">
+    </a>
+	Vainiovano
+  </div>
+
+  <div class="member">
     <a href="https://rvdev.codes">
       <img src="https://avatars.githubusercontent.com/u/69449141?s=300" alt="Idli">
     </a>

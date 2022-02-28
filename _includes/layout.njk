@@ -13,6 +13,7 @@ active: Home
     <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
     <script src="{{ '/js/index.js'  | url }}" defer></script>
     <script src="https://kit.fontawesome.com/86c060d6eb.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/img/favicon.ico' | url }}">
   </head>
   <body>
     <div id="container">
@@ -40,6 +41,7 @@ active: Home
                 <li {% if title == "Install" %}class="active"{% endif %}><a href="{{ '/swhkd/install' | url }}">install</a></li>
             </ul>
             <li {% if title == "Wayshot" %}class="active"{% endif %}><a href="{{ '/wayshot/' | url }}">Wayshot</a></li>
+            <li {% if title == "Wayout" %}class="active"{% endif %}><a href="{{ '/wayout/' | url }}">Wayout</a></li>
           </ul>
         </nav>
 
