@@ -16,6 +16,11 @@ tty.
 We are accepting more contributors to our organization. If you are
 interested, join our [Discord server](https://discord.gg/KKZRDYrRYW).
 
+### Our Supporters
+
+We are proudly supported by [Source Hut](https://sr.ht/), who has given us
+free hosting for our projects.
+
 ### Our Team
 
 <div class="members">
@@ -38,6 +43,13 @@ interested, join our [Discord server](https://discord.gg/KKZRDYrRYW).
       <img src="https://avatars.githubusercontent.com/u/62473844?s=300" alt="Eden">
     </a>
     Eden
+  </div>
+
+  <div class="member">
+    <a href="https://github.com/vainiovano">
+      <img src="https://avatars.githubusercontent.com/u/16741932?s=300" alt="Eden">
+    </a>
+	Vainiovano
   </div>
 
   <div class="member">

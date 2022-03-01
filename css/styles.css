@@ -13,14 +13,17 @@ body {
 body.dark {
   color: var(--dark-fg);
   background-color: var(--dark-bg);
+  --code-block: #363636;
+  --wayland-yellow: #F4B60B;
 }
 
 :root {
-  --wayland-yellow: #F4B60B;
+  --wayland-yellow: #E9AB00;
   --bg: #f5f5f5;
   --fg: #1B1B1B;
   --dark-fg: #E5E5E5;
   --dark-bg: #262626;
+  --code-block: #E7E7E7;
 }
 
 #container {
@@ -31,6 +34,10 @@ body.dark {
   gap: 40px;
   justify-content: flex-start;
   padding: 0 3%;
+}
+
+header nav ul li {
+  margin: 2px 0;
 }
 
 .fa-solid, .fa-brands {
@@ -54,6 +61,14 @@ body.dark {
   max-width: 90vw;
 }
 
+img {
+  max-width: 95vw;
+}
+
+body.dark img {
+  filter: brightness(.9) contrast(1.1);
+}
+
 ul {
   padding: 0;
 }
@@ -75,6 +90,29 @@ a {
   color: var(--wayland-yellow);
   text-decoration: none;
   border-bottom: 1px dashed;
+}
+
+code {
+  font-family: "Ubuntu Mono", monospace;
+  display: inline-block;
+  background-color: var(--code-block);
+  border-radius: 5px;
+  padding: 0.2em;
+  margin: 3px 0;
+}
+
+pre {
+  white-space: normal;
+  background-color: var(--code-block);
+  padding: 0.6em;
+  border-radius: 5px;
+}
+
+pre code {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .members {

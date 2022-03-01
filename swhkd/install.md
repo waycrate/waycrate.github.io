@@ -22,7 +22,7 @@ title: Install
 
 # Compiling:
 
--   `git clone https://github.com/waycrate/swhkd;cd swhkd`
+-   `git clone https://github.com/waycrate/swhkd && cd swhkd`
 -   `make setup`
 -   `make clean`
     -   `make` for a musl compile.

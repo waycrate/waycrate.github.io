@@ -53,6 +53,12 @@ Then call it using `setsid -f <path_to_refresh_script>`.
 
 A better implementation using signals will be developed later.
 
+## Configuration
+
+Swhkd closely follows sxhkd syntax, so most existing sxhkd configs should be functional with swhkd.
+
+The default configuration directory is `/etc/swhkd/swhkdrc`. If you don't like having to edit the file as root every single time, you can create a symlink from `~/.config/swhkd/swhkdrc` to `/etc/swhkd/swhkdrc`.
+
 ## Support server:
 
 [Discord](https://discord.gg/KKZRDYrRYW)
