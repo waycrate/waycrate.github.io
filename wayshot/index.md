@@ -57,7 +57,7 @@ wayshot -s "$(slurp -p -f '%x %y %w %h')" --stdout | convert - -format '%[pixel:
 # Installation
 
 ## AUR:
-`wayshot-git` & `wayshot-bin` has been packaged.
+`wayshot-git` & `wayshot-bin` have been packaged.
 
 ## Compile time dependencies:
 -   rustup
