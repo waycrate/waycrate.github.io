@@ -18,7 +18,7 @@ interested, join our [Discord server](https://discord.gg/KKZRDYrRYW).
 
 ### Our Supporters
 
-We are proudly supported by [Source Hut](https://sr.ht/), who has given us
+We are proudly supported by [Source Hut](https://sr.ht/), who have given us
 free hosting for our projects.
 
 ### Our Team
