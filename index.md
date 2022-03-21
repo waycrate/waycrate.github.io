@@ -14,7 +14,7 @@ tty.
 ### Contributing
 
 We are accepting more contributors to our organization. If you are
-interested, join our [Discord server](https://discord.gg/KKZRDYrRYW).
+interested, you can either join our Matrix space at [#waycrate-tools:matrix.org](https://matrix.to/#/#waycrate-tools:matrix.org) or join our [Discord server](https://discord.gg/KKZRDYrRYW), depending on your preference.
 
 ### Our Supporters
 
