@@ -61,7 +61,7 @@ The default configuration directory is `/etc/swhkd/swhkdrc`. If you don't like h
 
 ## Support:
 
-For support, you can join [#swhkd:matrix.org](https://matrix.to/#/#swhkd:matrix.org) or our [Discord](https://discord.gg/KKZRDYrRYW), depending on your preference.
+For support, you can join [#swhkd:matrix.org](https://matrix.to/#/#swhkd:matrix.org) on Matrix, or our [Discord](https://discord.gg/KKZRDYrRYW), depending on your preference.
 
 ## Contributors:
 
