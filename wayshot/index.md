@@ -73,7 +73,8 @@ wayshot -s "$(slurp -p -f '%x %y %w %h')" --stdout | convert - -format '%[pixel:
 
 1 - Use the mailing list.
 
-2 - I don't endorse the usage of Discord but if you really need it, then you can join the following <a href="https://discord.gg/KKZRDYrRYW">server</a> for support.
+2 - You can also join us on Matrix at ([#wayshot:matrix.org](https://matrix.to/#/#wayshot:matrix.org)), which is also bridged to our [Discord server](https://discord.gg/KKZRDYrRYW), depending on which you prefer.
+
 
 # Smithay Developers:
 

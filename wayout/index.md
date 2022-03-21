@@ -55,4 +55,4 @@ wayout --toggle <your output name>
 
 1 - Use the mailing list.
 
-2 - I don't endorse the usage of discord but if you really need it, then you can join the following <a href="https://discord.gg/KKZRDYrRYW">server</a> for support.
+2 - You can also join us on Matrix at ([#wayout:matrix.org](https://matrix.to/#/#wayout:matrix.org)), which is also bridged to our [Discord server](https://discord.gg/KKZRDYrRYW), depending on which you prefer.

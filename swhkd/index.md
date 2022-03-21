@@ -59,9 +59,9 @@ Swhkd closely follows sxhkd syntax, so most existing sxhkd configs should be fun
 
 The default configuration directory is `/etc/swhkd/swhkdrc`. If you don't like having to edit the file as root every single time, you can create a symlink from `~/.config/swhkd/swhkdrc` to `/etc/swhkd/swhkdrc`.
 
-## Support server:
+## Support:
 
-[Discord](https://discord.gg/KKZRDYrRYW)
+For support, you can join [#swhkd:matrix.org](https://matrix.to/#/#swhkd:matrix.org) on Matrix, or our [Discord](https://discord.gg/KKZRDYrRYW), depending on your preference.
 
 ## Contributors:
 
