@@ -73,7 +73,7 @@ wayshot -s "$(slurp -p -f '%x %y %w %h')" --stdout | convert - -format '%[pixel:
 
 1 - Use the mailing list.
 
-2 - You can also join our Matrix space ([#waycrate-tools:matrix.org](https://matrix.to/#/#waycrate-tools:matrix.org)), which is bridged to our [Discord server](https://discord.gg/KKZRDYrRYW), depending on which you prefer.
+2 - You can also join us on Matrix at ([#wayshot:matrix.org](https://matrix.to/#/#waycrate-tools:matrix.org)), which is also bridged to our [Discord server](https://discord.gg/KKZRDYrRYW), depending on which you prefer.
 
 
 # Smithay Developers:
