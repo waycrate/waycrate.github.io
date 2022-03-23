@@ -158,15 +158,15 @@ pre code {
   font-size: 20px;
 }
 
-.dark-mode-toggle .fa-toggle-on {
+.dark-mode-toggle .fa-dot-circle-o {
   display: none;
 }
 
-.dark .dark-mode-toggle .fa-toggle-on {
+.dark .dark-mode-toggle .fa-dot-circle-o {
   display: inline;
 }
 
-.dark .dark-mode-toggle .fa-toggle-off {
+.dark .dark-mode-toggle .fa-circle-o {
   display: none;
 }
 

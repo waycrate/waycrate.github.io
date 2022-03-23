@@ -12,7 +12,7 @@ active: Home
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
     <script src="{{ '/js/index.js'  | url }}" defer></script>
-    <script src="https://kit.fontawesome.com/86c060d6eb.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="{{ '/assets/img/favicon.ico' | url }}">
   </head>
   <body>
@@ -26,10 +26,10 @@ active: Home
 
         <nav>
           <ul>
-            <li {% if title == "Home" %}class="active"{% endif %}><a href="{{ '/index.html' | url }}"><i class="fa-solid fa-house"></i> Home</a></li>
-            <li><a href="https://github.com/waycrate/"><i class="fa-brands fa-github"></i> GitHub</a></li>
-            <li><a href="https://discord.gg/KKZRDYrRYW"><i class="fa-brands fa-discord"></i> Discord</a></li>
-			<li><a href="https://matrix.to/#/#waycrate-tools:matrix.org"><i class="fa-solid fa-message"></i> Matrix</a></li>
+            <li {% if title == "Home" %}class="active"{% endif %}><a href="{{ '/index.html' | url }}"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="https://github.com/waycrate/"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+            <li><a href="https://discord.gg/KKZRDYrRYW"><i class="fa fa-discord-alt" aria-hidden="true"></i> Discord</a></li>
+			<li><a href="https://matrix.to/#/#waycrate-tools:matrix.org"><i class="fa fa-matrix-org" aria-hidden="true"></i> Matrix</a></li>
           </ul>
         </nav>
 
@@ -46,7 +46,7 @@ active: Home
           </ul>
         </nav>
 
-        <button class="dark-mode-toggle"><i class="fa-solid fa-toggle-off"></i><i class="fa-solid fa-toggle-on"></i></button>
+        <button class="dark-mode-toggle"><i class="fa fa-circle-o" aria-hidden="true"></i><i class="fa fa-dot-circle-o" aria-hidden="true"></i></button>
       </header>
 
       <div class="content">
