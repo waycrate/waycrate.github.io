@@ -5,16 +5,12 @@ title: Home
 
 ## Welcome to Waycrate.
 
-We create tools that are suckless in nature for the Wayland protocol in Rust.
-
-Currently, we are developing [swhkd](https://github.com/waycrate/swhkd), a hotkey daemon that's a
-replacement for sxhkd. It aims to work across Wayland, Xorg and even
-tty.
+We create tools that are simple and efficient in nature primarily targeting Wayland protocol with Rust and Zig.
 
 ### Contributing
 
 We are accepting more contributors to our organization. If you are
-interested, you can either join our Matrix space at [#waycrate-tools:matrix.org](https://matrix.to/#/#waycrate-tools:matrix.org) or join our [Discord server](https://discord.gg/KKZRDYrRYW), depending on your preference.
+interested, get in touch with us via Discord or Matrix.
 
 ### Our Supporters
 
@@ -53,16 +49,9 @@ free hosting for our projects.
   </div>
 
   <div class="member">
-    <a href="https://rvdev.codes">
-      <img src="https://avatars.githubusercontent.com/u/69449141?s=300" alt="Idli">
+    <a href="https://github.com/uncomfyhalomacro">
+      <img src="https://avatars.githubusercontent.com/u/66054069?v=4" alt="Uncomfyhalomacro">
     </a>
-    Idli
-  </div>
-
-  <div class="member">
-    <a href="https://github.com/UnsignedArduino">
-      <img src="https://avatars.githubusercontent.com/u/38868705?s=300" alt="Ckyiu">
-    </a>
-    Ckyiu
+	Uncomfy
   </div>
 </div>
