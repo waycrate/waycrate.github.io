@@ -3,7 +3,7 @@ layout: layout.njk
 title: Home
 ---
 
-## Welcome to Waycrate.
+## Welcome to Waycrate
 
 We create tools that are simple and efficient in nature primarily targeting Wayland protocol with Rust and Zig.
 
@@ -42,16 +42,23 @@ free hosting for our projects.
   </div>
 
   <div class="member">
+    <a href="https://github.com/kolunmi">
+      <img src="https://avatars.githubusercontent.com/u/113054217?s=300" alt="Kolunmi">
+    </a>
+     Kolunmi
+  </div>
+
+  <div class="member">
     <a href="https://github.com/vainiovano">
       <img src="https://avatars.githubusercontent.com/u/16741932?s=300" alt="Eden">
     </a>
-	Vainiovano
+ Vainiovano
   </div>
 
   <div class="member">
     <a href="https://github.com/uncomfyhalomacro">
       <img src="https://avatars.githubusercontent.com/u/66054069?v=4" alt="Uncomfyhalomacro">
     </a>
-	Uncomfy
+ Uncomfy
   </div>
 </div>
