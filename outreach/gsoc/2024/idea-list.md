@@ -63,5 +63,5 @@ With the goal of improving user experience and bug fixing, this idea plans to in
 
 Currently Wayshot performs screen capturing and streaming through the CPU causing bottlenecking and severe performance degradation.
 
-Through the introduction of a DMA-BUF backend and a client-side API for performing capturing and image transformations on the GPU. 
+Through the introduction of a DMA-BUF backend and a client-side API for performing image capturing and transformations on the GPU. 
 This idea will enable high performance streaming over applications like OBS using our custom desktop portal backend.
