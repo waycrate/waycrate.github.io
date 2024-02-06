@@ -21,7 +21,7 @@ title: Idea List
 
 The current privilege model for SWHKD is rough, it has led to security vulnerabilities and problems with adoption among the userbase.
 
-Solving this can be approachined in two ways. Use a different program architecture, removing the current server-client architecture; Or using linux permissions more efficiently.
+Solving this problem can be approachined in two ways. Use a different program architecture, removing the current server-client architecture; Or use linux permissions more efficiently.
 
 Aiming to gain access to hardware safely and efficiently, this idea plans to replace the current privilege model with a simpler and robust system.
 
@@ -47,7 +47,7 @@ With the goal of improving user experience and bug fixing, this idea plans to in
 
 ---
 
-## Idea 3: Introduce [DMA-BUF backend](https://wayland.app/protocols/wlr-export-dmabuf-unstable-v1) for Wayshot to enable high performance screen capture
+## Idea 3: Introduce [DMA-BUF backend](https://wayland.app/protocols/wlr-export-dmabuf-unstable-v1) in Wayshot for high performance screen capture
 
 ### Possible Mentor(s):
 
@@ -61,6 +61,6 @@ With the goal of improving user experience and bug fixing, this idea plans to in
 
 ### Description:
 
-Currently Wayshot performs screen capturing and streaming through the CPU causing bottlenecking.
+Currently Wayshot performs image capturing and transformations through the CPU, causing bottlenecking.
 
 This idea will implement a DMA-BUF backend and a client-side API for high performance image capturing and transformations on the GPU. The new backend and api will enable high performance streaming over applications like [OBS](https://github.com/obsproject/obs-studio) using [our custom desktop portal backend](https://github.com/waycrate/xdg-desktop-portal-luminous).
