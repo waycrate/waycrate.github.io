@@ -19,11 +19,11 @@ title: Idea List
 
 ### Description:
 
-Due to the current tedious privilege model of swhkd, user adoption has been rough and flaky. It also led to security vulnerabilities in the past which have been patched since.
+The current privilege model for SWHKD is rough, it has led to security vulnerabilities and problems with adoption among the userbase.
 
-This idea aims to replace the current polkit-style privilege escalation to gain hardware access, with a simpler, more robust system. 
+Solving this can be approachined in two ways. Use a different program architecture, removing the current server-client architecture; Or using linux permissions more efficiently.
 
-This can be achieved in one of two ways by either removing the server-client architecture all together or using linux permission set more efficiently.
+Aiming to gain access to hardware safely and efficiently, this idea plans to replace the current privilege model with a simpler and robust system.
 
 ---
 
@@ -41,9 +41,9 @@ This can be achieved in one of two ways by either removing the server-client arc
 
 ### Description:
 
-The current SWHKD parser had been hand-rolled and is flaky in it's formal description. With this idea we aim to introduce a set of robust DSL rules by defining a formal grammar to rewrite our parser.
+The current SWHKD parser has been hand-rolled. The parser has poor error messages and a host of bugs breaking valid usecases, culminating in bad user experience.
 
-This idea aims to replace the current parser to get rid of a host of parser related bugs and lead to better errors messages and UX.
+With the goal of improving user experience and bug fixing, this idea plans to introduce a new parser with robust DSL rules by defining a formal grammar.
 
 ---
 
@@ -61,6 +61,7 @@ This idea aims to replace the current parser to get rid of a host of parser rela
 
 ### Description:
 
-Wayshot allows users to perform screen capture / streaming using CPU-copyback which leads to us being bottlenecked by the CPU throughput. This also includes image transformations on the CPU.
+Currently Wayshot performs screen capturing and streaming through the CPU causing bottlenecking and severe performance degradation.
 
-With the introduction of a DMA-BUF backend, we aim to expose a client-size API for directly capturing and performing all image-transformations at the GPU level. This enables high performance streaming over applications like OBS using our custom desktop portal backend.
+Through the introduction of a DMA-BUF backend and a client-side API for performing capturing and image transformations on the GPU. 
+This idea will enable high performance streaming over applications like OBS using our custom desktop portal backend.
