@@ -142,6 +142,18 @@ pre code {
   border-radius: 50%;
 }
 
+ol {
+  padding-left: 0;
+}
+
+li:before {
+  content: "- ";
+}
+
+li p {
+  display: inline;
+}
+
 .dark-mode-toggle {
   border: none;
   background-color: transparent;
