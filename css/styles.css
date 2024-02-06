@@ -74,12 +74,13 @@ body.dark img {
   filter: brightness(0.9) contrast(1.1);
 }
 
-ul {
-  padding: 0;
-}
-
-li {
-  list-style-type: none;
+header {
+  & li {
+    list-style-type: none;
+  }
+  & ul {
+    padding: 0;
+  }
 }
 
 ul ul li:before {
@@ -143,11 +144,11 @@ pre code {
 }
 
 ol {
-  padding-left: 0;
+  padding-left: 1.5em;
 }
 
-li:before {
-  content: "- ";
+ul {
+  padding-left: 0.8em;
 }
 
 li p {
