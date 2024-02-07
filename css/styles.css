@@ -74,6 +74,15 @@ body.dark img {
   filter: brightness(0.9) contrast(1.1);
 }
 
+header {
+  & li {
+    list-style-type: none;
+  }
+  & ul {
+    padding: 0;
+  }
+}
+
 ul {
   padding: 0;
 }
@@ -145,6 +154,18 @@ pre code {
 .member img {
   max-width: 100px;
   border-radius: 50%;
+}
+
+ol {
+  padding-left: 1.5em;
+}
+
+ul {
+  padding-left: 0.8em;
+}
+
+li p {
+  display: inline;
 }
 
 .dark-mode-toggle {
