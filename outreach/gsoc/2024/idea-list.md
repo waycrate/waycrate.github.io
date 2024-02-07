@@ -5,7 +5,7 @@ title: Idea List
 
 # GSoC 2024 cohort idea list:
 
-## Idea 1: Introduce [DMA-BUF backend](https://wayland.app/protocols/wlr-export-dmabuf-unstable-v1) for Wayshot to enable high performance screen capture
+## Idea 1: Introduce [DMA-BUF backend](https://wayland.app/protocols/wlr-export-dmabuf-unstable-v1) in Wayshot for high performance screen capture
 
 ### Possible Mentor(s):
 
@@ -19,9 +19,9 @@ title: Idea List
 
 ### Description:
 
-Wayshot allows users to perform screen capture / streaming using CPU-copyback which leads to us being bottlenecked by the CPU throughput. This also includes image transformations on the CPU.
+Currently Wayshot performs image capturing and transformations through the CPU, causing bottlenecking.
 
-With the introduction of a DMA-BUF backend, we aim to expose a client-side API for directly capturing and performing all image-transformations at the GPU level. This enables high performance streaming over applications like OBS using our custom desktop portal backend.
+This idea will implement a DMA-BUF backend and a client-side API for high performance image capturing and transformations on the GPU. The new backend and api should enable high performance streaming over applications like [OBS](https://github.com/obsproject/obs-studio) using [our custom desktop portal backend](https://github.com/waycrate/xdg-desktop-portal-luminous).
 
 ---
 
@@ -39,11 +39,11 @@ With the introduction of a DMA-BUF backend, we aim to expose a client-side API f
 
 ### Description:
 
-Due to the current tedious privilege model of swhkd, user adoption has been rough and flaky. It also led to security vulnerabilities in the past which have been patched since.
+The current privilege model for SWHKD is rough, it has led to security vulnerabilities and problems with adoption among the userbase.
 
-This idea aims to replace the current polkit-style privilege escalation to gain hardware access, with a simpler, more robust system. 
+Solving this problem can be approachined in two ways. Use a different program architecture, removing the current server-client architecture; Or use linux permissions more efficiently.
 
-This can be achieved in one of two ways by either removing the server-client architecture all together or using linux permission set more efficiently.
+Aiming to gain access to hardware safely and efficiently, this idea plans to replace the current privilege model with a simpler and robust system.
 
 ---
 
@@ -61,6 +61,6 @@ This can be achieved in one of two ways by either removing the server-client arc
 
 ### Description:
 
-The current SWHKD parser had been hand-rolled and is flaky in it's formal description. With this idea we aim to introduce a set of robust DSL rules by defining a formal grammar to rewrite our parser.
+The current SWHKD parser has been hand-rolled. The parser has poor error messages and a host of bugs breaking valid usecases, culminating in bad user experience.
 
-This idea aims to replace the current parser to get rid of a host of parser related bugs and lead to better errors messages and UX.
+With the goal of improving user experience and bug fixing, this idea plans to introduce a new parser with robust DSL rules by defining a formal grammar.

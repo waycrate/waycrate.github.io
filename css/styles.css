@@ -83,6 +83,19 @@ header {
   }
 }
 
+ul {
+  padding: 0;
+}
+
+nav h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
 ul ul li:before {
   content: "- ";
   color: var(--wayland-yellow);
