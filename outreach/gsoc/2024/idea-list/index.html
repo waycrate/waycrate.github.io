@@ -33,7 +33,7 @@
 
       <div class="content">
         <h1>GSoC 2024 cohort idea list:</h1>
-<h2>Idea 1: Introduce <a href="https://wayland.app/protocols/wlr-export-dmabuf-unstable-v1">DMA-BUF backend</a> for Wayshot to enable high performance screen capture</h2>
+<h2>Idea 1: Introduce <a href="https://wayland.app/protocols/wlr-export-dmabuf-unstable-v1">DMA-BUF backend</a> in Wayshot for high performance screen capture</h2>
 <h3>Possible Mentor(s):</h3>
 <ul>
 <li>Zubair Mohammed <a href="mailto:zubair.mh@protonmail.com">zubair.mh@protonmail.com</a></li>
@@ -44,8 +44,8 @@
 <h3>Project Size: Large (350 hours)</h3>
 <h3>Skills: Rust</h3>
 <h3>Description:</h3>
-<p>Wayshot allows users to perform screen capture / streaming using CPU-copyback which leads to us being bottlenecked by the CPU throughput. This also includes image transformations on the CPU.</p>
-<p>With the introduction of a DMA-BUF backend, we aim to expose a client-side API for directly capturing and performing all image-transformations at the GPU level. This enables high performance streaming over applications like OBS using our custom desktop portal backend.</p>
+<p>Currently Wayshot performs image capturing and transformations through the CPU, causing bottlenecking.</p>
+<p>This idea will implement a DMA-BUF backend and a client-side API for high performance image capturing and transformations on the GPU. The new backend and api should enable high performance streaming over applications like <a href="https://github.com/obsproject/obs-studio">OBS</a> using <a href="https://github.com/waycrate/xdg-desktop-portal-luminous">our custom desktop portal backend</a>.</p>
 <hr>
 <h2>Idea 2: Reiterating SWHKD security model to achieve simpler UX</h2>
 <h3>Possible Mentor(s):</h3>
@@ -58,9 +58,9 @@
 <h3>Project Size: Medium (175 hours)</h3>
 <h3>Skills: Rust</h3>
 <h3>Description:</h3>
-<p>Due to the current tedious privilege model of swhkd, user adoption has been rough and flaky. It also led to security vulnerabilities in the past which have been patched since.</p>
-<p>This idea aims to replace the current polkit-style privilege escalation to gain hardware access, with a simpler, more robust system.</p>
-<p>This can be achieved in one of two ways by either removing the server-client architecture all together or using linux permission set more efficiently.</p>
+<p>The current privilege model for SWHKD is rough, it has led to security vulnerabilities and problems with adoption among the userbase.</p>
+<p>Solving this problem can be approachined in two ways. Use a different program architecture, removing the current server-client architecture; Or use linux permissions more efficiently.</p>
+<p>Aiming to gain access to hardware safely and efficiently, this idea plans to replace the current privilege model with a simpler and robust system.</p>
 <hr>
 <h2>Idea 3: Formalize SWHKD parser using regular grammar notation</h2>
 <h3>Possible Mentor(s):</h3>
@@ -73,8 +73,8 @@
 <h3>Project Size: Medium (175 hours)</h3>
 <h3>Skills: Rust</h3>
 <h3>Description:</h3>
-<p>The current SWHKD parser had been hand-rolled and is flaky in it's formal description. With this idea we aim to introduce a set of robust DSL rules by defining a formal grammar to rewrite our parser.</p>
-<p>This idea aims to replace the current parser to get rid of a host of parser related bugs and lead to better errors messages and UX.</p>
+<p>The current SWHKD parser has been hand-rolled. The parser has poor error messages and a host of bugs breaking valid usecases, culminating in bad user experience.</p>
+<p>With the goal of improving user experience and bug fixing, this idea plans to introduce a new parser with robust DSL rules by defining a formal grammar.</p>
 
       </div>
     </div>
