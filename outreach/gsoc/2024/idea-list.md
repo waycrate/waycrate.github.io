@@ -25,8 +25,7 @@ This idea will implement a DMA-BUF backend and a client-side API for high perfor
 
 ### Expected Outcomes
 
-- Able to write a DMA-BUF backend in Wayshot
-- Wayshot can now support high-performance screen capture with DMA-BUF
+- Integration of a DMA-BUF backend into Wayshot that allows high-performance screen capture and possibly extend [xdg-desktop-portal-luminous](https://github.com/waycrate/xdg-desktop-portal-luminous)
 
 ---
 
