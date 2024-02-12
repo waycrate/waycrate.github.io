@@ -46,9 +46,9 @@
       </header>
 
       <div class="content">
-        <h1>GSoC 2024 cohort idea list:</h1>
+        <h1>GSoC 2024 cohort idea list</h1>
 <h2>Idea 1: Introduce <a href="https://wayland.app/protocols/wlr-export-dmabuf-unstable-v1">DMA-BUF backend</a> in Wayshot for high performance screen capture</h2>
-<h3>Possible Mentor(s):</h3>
+<h3>Possible Mentor(s)</h3>
 <ul>
 <li>Zubair Mohammed <a href="mailto:zubair.mh@protonmail.com">zubair.mh@protonmail.com</a></li>
 <li>Aakash Sen Sharma <a href="mailto:aakashsensharma@gmail.com">aakashsensharma@gmail.com</a></li>
@@ -60,9 +60,13 @@
 <h3>Description:</h3>
 <p>Currently Wayshot performs image capturing and transformations through the CPU, causing bottlenecking.</p>
 <p>This idea will implement a DMA-BUF backend and a client-side API for high performance image capturing and transformations on the GPU. The new backend and api should enable high performance streaming over applications like <a href="https://github.com/obsproject/obs-studio">OBS</a> using <a href="https://github.com/waycrate/xdg-desktop-portal-luminous">our custom desktop portal backend</a>.</p>
+<h3>Expected Outcomes</h3>
+<ul>
+<li>Integration of a DMA-BUF backend into Wayshot that allows high-performance screen capture and possibly extend <a href="https://github.com/waycrate/xdg-desktop-portal-luminous">xdg-desktop-portal-luminous</a></li>
+</ul>
 <hr>
 <h2>Idea 2: Reiterating SWHKD security model to achieve simpler UX</h2>
-<h3>Possible Mentor(s):</h3>
+<h3>Possible Mentor(s)</h3>
 <ul>
 <li>Aakash Sen Sharma <a href="mailto:aakashsensharma@gmail.com">aakashsensharma@gmail.com</a></li>
 <li>Zubair Mohammed <a href="mailto:zubair.mh@protonmail.com">zubair.mh@protonmail.com</a></li>
@@ -75,9 +79,14 @@
 <p>The current privilege model for SWHKD is rough, it has led to security vulnerabilities and problems with adoption among the userbase.</p>
 <p>Solving this problem can be approachined in two ways. Use a different program architecture, removing the current server-client architecture; Or use linux permissions more efficiently.</p>
 <p>Aiming to gain access to hardware safely and efficiently, this idea plans to replace the current privilege model with a simpler and robust system.</p>
+<h3>Expected Outcomes</h3>
+<ul>
+<li>Improve the UX of SWHKD while minimizing friction for transitions to the new model</li>
+<li>SWHKD security API model mitigates more security issues than before</li>
+</ul>
 <hr>
 <h2>Idea 3: Formalize SWHKD parser using regular grammar notation</h2>
-<h3>Possible Mentor(s):</h3>
+<h3>Possible Mentor(s)</h3>
 <ul>
 <li>Angelo Fallaria <a href="mailto:ba.fallaria@gmail.com">ba.fallaria@gmail.com</a></li>
 <li>Zubair Mohammed <a href="mailto:zubair.mh@protonmail.com">zubair.mh@protonmail.com</a></li>
@@ -89,6 +98,12 @@
 <h3>Description:</h3>
 <p>The current SWHKD parser has been hand-rolled. The parser has poor error messages and a host of bugs breaking valid usecases, culminating in bad user experience.</p>
 <p>With the goal of improving user experience and bug fixing, this idea plans to introduce a new parser with robust DSL rules by defining a formal grammar.</p>
+<h3>Expected Outcomes</h3>
+<ul>
+<li>Create a new parser with proper parsing techniques</li>
+<li>Create EBNF grammar for the configuration language</li>
+<li>Write comprehensive unit tests for the new parser</li>
+</ul>
 
       </div>
     </div>
