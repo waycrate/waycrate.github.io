@@ -45,7 +45,7 @@ This idea will implement a DMA-BUF backend and a client-side API for high perfor
 
 The current privilege model for SWHKD is rough, it has led to security vulnerabilities and problems with adoption among the userbase.
 
-Solving this problem can be approachined in two ways. Use a different program architecture, removing the current server-client architecture; Or use linux permissions more efficiently.
+Solving this problem can be approached in two ways. Use a different program architecture, removing the current server-client architecture; Or use linux permissions more efficiently.
 
 Aiming to gain access to hardware safely and efficiently, this idea plans to replace the current privilege model with a simpler and robust system.
 
