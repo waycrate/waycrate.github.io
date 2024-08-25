@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Waycrate | Project 3 - Formalize SWHKD parser using regular grammar notation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/86c060d6eb.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="logo">
+          <img src="/assets/img/waycrate-logo.png" alt="Waycrate Logo">
+        </div>
+
+        <h1>Waycrate</h1>
+
+        <nav>
+          <ul>
+            <li ><a href="/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="https://github.com/waycrate/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li><a href="https://discord.gg/KKZRDYrRYW" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i> Discord</a></li>
+          </ul>
+
+          <h3>GSoC 2024</h3>
+          <ul>
+            <li >
+              <a href="/outreach/gsoc/2024/contributor-proposal-guidance/">
+                Contributor guide
+              </a>
+            </li>
+            <li >
+              <a href="/outreach/gsoc/2024/idea-list/">
+                Idea list
+              </a>
+            </li>
+            <li >
+              <a href="/outreach/gsoc/2024/contributors/">
+                2024 Contributors
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="dark-mode-toggle"><i class="fa-solid fa-toggle-off"></i><i class="fa-solid fa-toggle-on"></i></button>
+      </header>
+
+      <div class="content">
+        <h1>Overview</h1>
+<p>Hello and welcome to the final GSoC post for 2024! My task was to formalize the SWHKD parser using context-free EBNF notation. This post is to serve as a birdseye view of what
+I have developed over this summer.</p>
+<ul>
+<li><strong>Mentors</strong>: Aakash Sen Sharma</li>
+<li><strong>Student</strong>: Himadri Bhattacharjee</li>
+</ul>
+<h1>Report</h1>
+<h2>Architecting the parser</h2>
+<p>I started out with the scaffolding of the parser in an extended Backus-Naur form garmmar template
+in a separate repository called <a href="https://github.com/waycrate/sweet">SWEET</a> using a Rust framework
+called <a href="https://pest.rs">pest.rs</a>. Quite a lot of time was
+spent in modelling the architecture of the syntax tree for our domain specific language.</p>
+<p>Here's a simplified syntax tree of the grammar parser.</p>
+<p><img src="/assets/img/sweet-architecture.svg" alt="A flowchart showing the working of the abstract syntax tree"></p>
+<p>One of the most helpful design choices was to have an acyclic dependency graph which enabled composing
+expressions into larger blocks.</p>
+<h2>Isolating shorthands into separate expressions</h2>
+<p>Shorthands expressions inside curly braces which were previously parsed dynamically have now been moved
+to work statically from the grammar side itself. This has two advantages:</p>
+<ul>
+<li>The matching of both comma separated <em>&quot;slices&quot;</em> and dash separated <em>&quot;ranges&quot;</em> can be proven from the grammar template itself.</li>
+<li>Due to the greedy token matching of EBNF, the negative lookaheads guarantee a finite number of tokens to match a slice or range.</li>
+<li>Extracting the components inside these blocks are performed in a single pass.</li>
+</ul>
+<p>The latter is a theme that will continue throughout the rest of this report.</p>
+<h2>Adopting static checks</h2>
+<p>Many of the earlier hand-rolled checks have now been moved to the grammar side and are now performed statically.
+We are borrowing a concept from the Rust programming language itself which promotes making invalid states unrepresentable.</p>
+<p>One such example is validating characters inside ranges. The specification requires these characters
+to be within the ASCII range. We define this constraint inside the grammar template itself.</p>
+<p>This way, if some invalid input is supplied, it never hits the business logic and the program errors out early.</p>
+<h2>Separating channels of commands and mode instructions</h2>
+<p>SWHKD supports entering or escaping a mode by placing special instructions after the double ampersands between two commands.
+Previously,
+these instructions were extracted from the commands dynamically right before they were being run
+line by line. This led to edge cases where the command being run is not what the user intended.</p>
+<p>To sanitize this, we perform static extraction of these modes in the context of an entire block of
+commands. We create a separate structure linked to a command structure that can hold arbitrarily many of these mode instructions
+and the instructions are run only after all the command chunks have been executed.</p>
+<h2>Unified shorthand syntax</h2>
+<p>This is one of the breaking changes introduced in the new parser.</p>
+<p>Previously, when modifiers were
+used inside shorthands, one could place the concatenator (plus sign) either outside or inside the
+braces. This allowed somewhat off looking combinations like these:</p>
+<pre><code>{super, control + } + a
+  notify-send {'hello', 'goodbye'}
+</code></pre>
+<p>This was allowed because the older parser simply ignored the concatenator, using the closing curly
+brace as a confirmation for the end of a shorthand.</p>
+<p>The new parser disallows this behavior. When using multiple modifiers, one must simply place an concatenator after the shorthand ends.
+The above example then turns into the following:</p>
+<pre><code>{super, control} + a
+  notify-send {'hello', 'goodbye'}
+</code></pre>
+<p>Now there's at most one way to do shorthands correct:</p>
+<ul>
+<li>A shorthand must contain at least two variants. It makes no sense to use shorthands otherwise.</li>
+<li>Any literal like a comma or a curly brace inside a shorthand must be escaped</li>
+<li>Literals do not need to be escaped outside shorthand contexts.</li>
+<li>Shorthands with omissions (underscore elements) must always have a concatenator appended to each non-empty element. For example, unlike <code>{control, super} + a</code>, in <code>{_, super + } a</code> adding a plus to <code>super</code> inside the shorthand is the only valid syntax.</li>
+</ul>
+<p>A good comparison would be bash or Rust macro expansions. Here's an animation as to how we perform
+a &quot;compilation&quot;.</p>
+<p><img src="/assets/img/sweet-macro-compilation.gif" alt="An animation showing a cartesian product of shorthands"></p>
+<p>The new parser simply keeps track of shorthand values including ranges and slices as long as it is
+ingesting newer content. These shorthands are lazily evaluated in the end when all files, including
+imports have been ingested.</p>
+<h2>More human friendly errors</h2>
+<p>One of the most difficult ways to get a working config for a tool like SWHKD is the lack of helpful
+errors. The new parser addresses most of these issues. With the pest crate, we have been able to
+provide rich contextual errors. Here's an example:</p>
+<pre><code class="language-text">Error: unable to parse config file
+
+Caused by:
+      --&gt; hotkeys.swhkd:20:11
+       |
+    20 | super + k + control
+       |           ^---
+       |
+       = expected command
+</code></pre>
+<p>Instead of just printing what the error was, we try to help the user by letting them know about what
+the parser expected, where in the source file does the error exists and any suggestion available to
+fix the error.</p>
+<p>This not only applies to the grammar errors but to all of the errors in the business logic. Here's an
+example of when the number of shorthand variants in the trigger don't match the number of command variants.</p>
+<pre><code>Error: unable to parse config file
+
+Caused by:
+      --&gt; 35:1
+       |
+    35 | super + {alt + , _, shift + } a
+    36 |  notify-send 'hello'␊
+       | ^------------------^
+       |
+       = the number of possible binding variants 3 does not equal the number of possible command variants 1.
+</code></pre>
+<p>Our custom error
+structures wrap around pest's error types to provide such additional context as and when needed.</p>
+<h2>Precautions</h2>
+<p>Before parsing any config files supplied as input, we perform the following sanity checks:</p>
+<ul>
+<li>Ensure that the files are within the predefined file-size capacity. This capacity can be configured
+during compilation by modifying the <code>build.rs</code> file.</li>
+<li>Ensure the file being supplied is a regular file. This is a cautionary measure against an older <a href="https://github.com/advisories/GHSA-x446-3xhq-5xfp">CVE-2022-27814</a>.</li>
+</ul>
+<h1>Relevant links</h1>
+<ul>
+<li>Source tree for the parser: <a href="https://github.com/waycrate/sweet">waycrate/sweet</a></li>
+<li>PR to integrate <code>sweet</code> into <code>swhkd</code>: <a href="https://github.com/waycrate/swhkd/pull/265">#265</a></li>
+</ul>
+<h1>Conclusion</h1>
+<p>Debugging a context free grammar syntax like EBNF was certainly challenging although this issue was solved
+relatively easily thanks to the excellent editor provided at the <a href="https://pest.rs">pest.rs</a> website. The parser
+has reached complete feature parity, being slightly stricter in some cases as I
+had planned with my mentor, Aakash Sen Sharma. Huge thanks to him for the helping me out with getting familiar
+with the codebase quickly. The rest of the waycrate community has also been incredibly warm and welcoming.</p>
+<p>I plan to add a heuristics model to SWHKD for detecting input devices better and more generally
+to continue improving SWHKD. Feel free to check out the other posts on <a href="https://lavafroth.is-a.dev/tags/google-summer-of-code">my blog</a> which go deeper into the process
+of building this parser. This has been my GSoC 2024, thank you so much for reading this!</p>
+
+      </div>
+    </div>
+  </body>
+</html>
