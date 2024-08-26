@@ -5,11 +5,11 @@ layout: layout.njk
 
 # Overview
 
-Hello and welcome to the final GSoC post for 2024! My task was to formalize the SWHKD parser using context-free EBNF notation. This post is to serve as a birdseye view of what
-I have developed over this summer.
-
 - **Mentors**: Aakash Sen Sharma
 - **Student**: Himadri Bhattacharjee
+
+Hello and welcome to the GSoC final report for 2024! My task was to formalize the SWHKD parser using context-free EBNF notation. This post is to serve as a birdseye view of what
+I have developed over this summer.
 
 # Report
 
@@ -67,10 +67,10 @@ Previously, when modifiers were
 used inside shorthands, one could place the concatenator (plus sign) either outside or inside the
 braces. This allowed somewhat off looking combinations like these:
 
-```
+<pre style="white-space: pre-wrap;">
 {super, control + } + a
   notify-send {'hello', 'goodbye'}
-```
+</pre>
 
 This was allowed because the older parser simply ignored the concatenator, using the closing curly
 brace as a confirmation for the end of a shorthand.
@@ -78,10 +78,10 @@ brace as a confirmation for the end of a shorthand.
 The new parser disallows this behavior. When using multiple modifiers, one must simply place an concatenator after the shorthand ends.
 The above example then turns into the following:
 
-```
+<pre style="white-space: pre-wrap;">
 {super, control} + a
   notify-send {'hello', 'goodbye'}
-```
+</pre>
 
 Now there's at most one way to do shorthands correct:
   - A shorthand must contain at least two variants. It makes no sense to use shorthands otherwise.
@@ -104,7 +104,7 @@ One of the most difficult ways to get a working config for a tool like SWHKD is 
 errors. The new parser addresses most of these issues. With the pest crate, we have been able to
 provide rich contextual errors. Here's an example:
 
-```text
+<pre style="white-space: pre-wrap;">
 Error: unable to parse config file
 
 Caused by:
@@ -114,7 +114,7 @@ Caused by:
        |           ^---
        |
        = expected command
-```
+</pre>
 
 Instead of just printing what the error was, we try to help the user by letting them know about what
 the parser expected, where in the source file does the error exists and any suggestion available to
@@ -123,7 +123,7 @@ fix the error.
 This not only applies to the grammar errors but to all of the errors in the business logic. Here's an
 example of when the number of shorthand variants in the trigger don't match the number of command variants.
 
-```
+<pre style="white-space: pre-wrap;">
 Error: unable to parse config file
 
 Caused by:
@@ -134,7 +134,7 @@ Caused by:
        | ^------------------^
        |
        = the number of possible binding variants 3 does not equal the number of possible command variants 1.
-```
+</pre>
 
 Our custom error
 structures wrap around pest's error types to provide such additional context as and when needed.
