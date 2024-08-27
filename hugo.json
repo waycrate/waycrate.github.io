@@ -55,6 +55,12 @@
         "parent": "GSoC 2024",
         "pageRef": "/gsoc/2024/contributors/",
         "weight": 30
+      },
+      {
+        "name": "2024 Submissions",
+        "parent": "GSoC 2024",
+        "pageRef": "/gsoc/2024/submissions/",
+        "weight": 30
       }
     ]
   },
