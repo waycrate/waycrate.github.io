@@ -1,5 +1,5 @@
 {
-  description = "devshell for github:lavafroth/evdevheur";
+  description = "devshell for github:waycrate/waycrate.github.io";
 
   inputs.flake-utils.url = "github:numtide/flake-utils";
 
