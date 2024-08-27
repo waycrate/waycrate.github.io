@@ -1,27 +1,21 @@
 {
-  description = "Waycrate-website devel";
+  description = "devshell for github:lavafroth/evdevheur";
 
-  inputs = { nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable"; };
+  inputs.flake-utils.url = "github:numtide/flake-utils";
 
-  outputs = { self, nixpkgs, ... }:
-    let
-      pkgsFor = system:
-        import nixpkgs {
-          inherit system;
-          overlays = [ ];
-        };
-
-      targetSystems = [ "aarch64-linux" "x86_64-linux" ];
-    in {
-      devShells = nixpkgs.lib.genAttrs targetSystems (system:
-        let pkgs = pkgsFor system;
-        in {
-          default = pkgs.mkShell {
-            name = "Waycrate-website-devel";
-            nativeBuildInputs = with pkgs; [
-				nodejs
+  outputs = { self, nixpkgs, flake-utils }:
+    flake-utils.lib.eachDefaultSystem
+      (system:
+        let pkgs = nixpkgs.legacyPackages.${system}; in
+        {
+          devShells.default = pkgs.mkShell {
+            packages = with pkgs;
+            [
+              hugo
+              tailwindcss
             ];
+
           };
-        });
-    };
+        }
+      );
 }

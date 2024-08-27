@@ -1,0 +1,11 @@
+<div class="inline-flex flex-col items-center">
+  {{ if .Get "url" }}
+    <a class="border-none hover:border-none" {{ with .Get "url" }} href="{{ . | safeURL }}" {{ end }}>
+  {{ end }}
+  <img {{ with .Get "avatar" }} src="{{ . | safeURL }}" class="w-24 h-24 rounded-full" {{ end }}
+  {{ with or (.Get "altname") (.Get "name") }} alt="{{ . }}" {{ end }} />
+  {{ if .Get "url" }}
+    </a>
+  {{ end }}
+  {{ .Get "name" }}
+</div>

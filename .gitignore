@@ -1,6 +1,2 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-node_modules/
-/.direnv
+.direnv
+public

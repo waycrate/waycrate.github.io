@@ -1,6 +1,5 @@
 ---
 title: Project 3 - Formalize SWHKD parser using regular grammar notation
-layout: layout.njk
 ---
 
 # Overview
@@ -78,7 +77,7 @@ brace as a confirmation for the end of a shorthand.
 The new parser disallows this behavior. When using multiple modifiers, one must simply place an concatenator after the shorthand ends.
 The above example then turns into the following:
 
-```
+```text
 {super, control} + a
   notify-send {'hello', 'goodbye'}
 ```
@@ -104,7 +103,7 @@ One of the most difficult ways to get a working config for a tool like SWHKD is 
 errors. The new parser addresses most of these issues. With the pest crate, we have been able to
 provide rich contextual errors. Here's an example:
 
-```text
+```
 Error: unable to parse config file
 
 Caused by:

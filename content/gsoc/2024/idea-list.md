@@ -1,9 +1,6 @@
 ---
-layout: layout.njk
-title: Idea List
+title: GSoC 2024 cohort idea list
 ---
-
-# GSoC 2024 cohort idea list
 
 ## Idea 1: Introduce [DMA-BUF backend](https://wayland.app/protocols/wlr-export-dmabuf-unstable-v1) in Wayshot for high performance screen capture
 

@@ -1,9 +1,6 @@
 ---
-layout: layout.njk
-title: Contributor guidance
+title: Contributor proposal guidance
 ---
-
-# Contributor proposal guidance:
 
 Hi! Thank you for considering to contribute to the Waycrate organization!
 

@@ -1,0 +1,160 @@
+@tailwind base;
+
+h1 {
+  @apply text-3xl font-bold;
+}
+h2 {
+  @apply text-2xl font-bold;
+}
+h3 {
+  @apply text-xl font-bold;
+}
+h4 {
+  @apply text-lg font-bold;
+}
+h5 {
+  @apply font-semibold;
+}
+h6 {
+  @apply font-medium;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  @apply mb-2;
+}
+
+h1:not(:first-child) {
+  @apply mt-10;
+}
+
+h2:not(:first-child) {
+  @apply mt-8;
+}
+
+h3:not(:first-child) {
+  @apply mt-6;
+}
+
+h4:not(:first-child) {
+  @apply mt-4;
+}
+
+h5:not(:first-child) {
+  @apply mt-4;
+}
+
+h6:not(:first-child) {
+  @apply mt-4;
+}
+
+pre {
+  @apply my-4 p-4 text-base rounded transition;
+}
+
+pre > code {
+  @apply p-0;
+}
+
+code {
+  @apply font-['UbuntuMonoRegular'] bg-[#e7e7e7] dark:bg-[#363636] p-1 rounded;
+}
+
+a {
+  @apply dark:text-[#f4b60b] text-[#e9ab00] border-dotted border-b-2 dark:border-[#f4b60b] border-[#e9ab00] hover:border-solid;
+}
+
+ul {
+  @apply list-disc list-inside;
+}
+
+ol {
+  @apply list-decimal list-inside;
+}
+
+li > ul, li > ol {
+  @apply ml-4;
+}
+
+li > p {
+  @apply inline;
+}
+
+hr {
+  @apply my-4;
+}
+
+p+p {
+  @apply mt-4;
+}
+
+time {
+  @apply text-base dark:text-gray-300 text-gray-700;
+}
+
+:root {
+  --scrollbar-bg: #e0e0e0;
+  --scrollbar-bg-hover: #dda813;
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+  --scrollbar-bg: #3d3b3b;
+}
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--wayland-yellow);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-bg-hover);
+}
+
+.btn-dark > .circle,
+.btn-dark > .line,
+.btn-dark > .rays {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3.5;
+  stroke-miterlimit: 10;
+  transition: 0.25s;
+  stroke-dashoffset: 0.00001px;
+  stroke-dasharray: none;
+}
+
+
+.dark .btn-dark .circle {
+  d: path("M30,11c-10.49,0-19,8.51-19,19c0,10.49,8.51,19,19,19c5.18,0,9.87-2.08,13.3-5.44c-10.37-0.15-18.73-8.58-18.73-18.99C24.57,16.52,30,11,30,11z");
+}
+
+.dark .btn-dark .rays {
+  transform: matrix(0.62,0,0,0.62,11.399999999999999,11.399999999999999);
+  opacity: 0;
+}
+
+.btn-dark {
+  cursor: pointer;
+}
+
+
+@layer base {
+  @font-face {
+    font-family: 'UbuntuMonoRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/Ubuntu_Mono/UbuntuMono-Regular.ttf);
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
