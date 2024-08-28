@@ -629,7 +629,10 @@ h6:not(:first-child) {
 pre {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  overflow-x: scroll;
   border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 231 231 / var(--tw-bg-opacity));
   padding: 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -638,6 +641,11 @@ pre {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+pre:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(54 54 54 / var(--tw-bg-opacity));
 }
 
 pre > code {
@@ -827,11 +835,6 @@ time:is(.dark *) {
   top: 1.75rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .ml-4 {
   margin-left: 1rem;
 }
@@ -884,12 +887,12 @@ time:is(.dark *) {
   width: 20rem;
 }
 
-.max-w-2xl {
-  max-width: 42rem;
+.min-w-0 {
+  min-width: 0px;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .-translate-x-80 {
@@ -921,12 +924,12 @@ time:is(.dark *) {
   justify-content: center;
 }
 
-.place-self-end {
-  place-self: end;
+.gap-6 {
+  gap: 1.5rem;
 }
 
-.self-end {
-  align-self: flex-end;
+.place-self-end {
+  place-self: end;
 }
 
 .self-center {
@@ -935,6 +938,10 @@ time:is(.dark *) {
 
 .overflow-visible {
   overflow: visible;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded-full {
@@ -960,10 +967,6 @@ time:is(.dark *) {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.pt-0 {
-  padding-top: 0px;
 }
 
 .text-center {
@@ -1034,34 +1037,17 @@ time:is(.dark *) {
     visibility: hidden;
   }
 
-  .md\:relative {
-    position: relative;
-  }
-
-  .md\:col-span-3 {
-    grid-column: span 3 / span 3;
-  }
-
-  .md\:col-span-4 {
-    grid-column: span 4 / span 4;
+  .md\:static {
+    position: static;
   }
 
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
 
-  .md\:mx-0 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   .md\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
-  }
-
-  .md\:mb-2 {
-    margin-bottom: 0.5rem;
   }
 
   .md\:mb-4 {
@@ -1105,20 +1091,8 @@ time:is(.dark *) {
     justify-content: center;
   }
 
-  .md\:self-auto {
-    align-self: auto;
-  }
-
   .md\:p-0 {
     padding: 0px;
-  }
-
-  .md\:pl-0 {
-    padding-left: 0px;
-  }
-
-  .md\:pt-6 {
-    padding-top: 1.5rem;
   }
 
   .md\:shadow-none {

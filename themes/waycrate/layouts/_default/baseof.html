@@ -3,11 +3,11 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body class="transition duration-300 bg-[#f5f5f5] dark:bg-[#262626] font-['UbuntuMonoRegular'] text-lg text-[#1b1b1b] dark:text-[#e5e5e5]">
-  <container class="flex md:flex-row md:justify-center flex-col">
+<body class="transition duration-300 bg-[#f5f5f5] dark:bg-[#262626] font-['UbuntuMonoRegular'] text-lg text-[#1b1b1b] dark:text-[#e5e5e5] overflow-x-hidden">
+  <container class="p-6 flex md:flex-row gap-6 md:justify-center flex-col">
 
   {{ partial "header.html" . }}
-  <main class="flex-1 p-6 md:pl-0 pt-0 md:pt-6 max-w-2xl mx-auto md:mx-0">
+  <main class="min-w-0 max-w-2xl">
     {{ block "main" . }}{{ end }}
   </main>
   </container>
