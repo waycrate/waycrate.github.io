@@ -41,25 +41,25 @@
       {
         "name": "Idea List",
         "parent": "GSoC 2024",
-        "pageRef": "/gsoc/2024/idea-list/",
+        "pageRef": "/outreach/gsoc/2024/idea-list/",
         "weight": 10
       },
       {
         "name": "Contributor Guide",
         "parent": "GSoC 2024",
-        "pageRef": "/gsoc/2024/contributor-proposal-guidance/",
+        "pageRef": "/outreach/gsoc/2024/contributor-proposal-guidance/",
         "weight": 20
       },
       {
         "name": "2024 Contributors",
         "parent": "GSoC 2024",
-        "pageRef": "/gsoc/2024/contributors/",
+        "pageRef": "/outreach/gsoc/2024/contributors/",
         "weight": 30
       },
       {
         "name": "2024 Submissions",
         "parent": "GSoC 2024",
-        "pageRef": "/gsoc/2024/submissions/",
+        "pageRef": "/outreach/gsoc/2024/submissions/",
         "weight": 30
       }
     ]

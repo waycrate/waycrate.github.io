@@ -21,7 +21,7 @@ spent in modelling the architecture of the syntax tree for our domain specific l
 
 Here's a simplified syntax tree of the grammar parser.
 
-![A flowchart showing the working of the abstract syntax tree](/assets/img/sweet-architecture.svg)
+![A flowchart showing the working of the abstract syntax tree](/img/sweet-architecture.svg)
 
 One of the most helpful design choices was to have an acyclic dependency graph which enabled composing
 expressions into larger blocks.
@@ -91,7 +91,7 @@ Now there's at most one way to do shorthands correct:
 A good comparison would be bash or Rust macro expansions. Here's an animation as to how we perform
 a "compilation".
 
-![An animation showing a cartesian product of shorthands](/assets/img/sweet-macro-compilation.gif)
+![An animation showing a cartesian product of shorthands](/img/sweet-macro-compilation.gif)
 
 The new parser simply keeps track of shorthand values including ranges and slices as long as it is
 ingesting newer content. These shorthands are lazily evaluated in the end when all files, including
