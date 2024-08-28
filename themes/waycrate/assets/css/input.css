@@ -141,6 +141,10 @@ time {
   opacity: 0;
 }
 
+main, p {
+  word-wrap: break-word;
+}
+
 .btn-dark {
   cursor: pointer;
 }
