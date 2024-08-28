@@ -1,0 +1,15 @@
+name = 'Waycrate'
+license = 'BSD-2'
+description = 'custom theme for waycrate'
+
+homepage = 'https://github.com/waycrate/waycrate.github.io'
+demosite = 'https://waycrate.github.io/'
+
+# Taxonomy terms
+tags = ['custom', 'waycrate']
+
+# If the theme has multiple authors
+authors = [
+  {name = 'Waycrate', homepage = 'https://waycrate.github.io'}
+  {name = 'Himadri Bhattacharjee', homepage = 'https://lavafroth.is-a.dev'},
+]

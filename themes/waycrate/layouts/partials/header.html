@@ -1,0 +1,27 @@
+<header class="flex md:flex-col flex-row justify-center md:justify-start items-center">
+    <div class="grid grid-cols-4 items-center md:grid-cols-2 md:mb-4">
+      <svg id="menuOpen" class="md:invisible w-8 h-8" viewBox="0 0 24 24"><path d="M5 6h14M5 12h14M5 18h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+      <img src="/waycrate.svg" alt="Waycrate Logo" class="md:h-40 h-24 md:my-0 md:col-span-2">
+      <div class="md:w-full text-3xl font-bold text-center items-center">{{ site.Title }}</div>
+      <svg version="1.1" class="btn-dark w-8 h-8 place-self-end self-center" id="btn-dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" preserveAspectRatio="xMinYMin meet">
+          <path class="circle stroke-current" d="M30,16c7.73,0,14,6.27,14,14c0,3.81-1.53,7.27-4,9.8c-2.54,2.59-6.08,4.2-10,4.2c-7.73,0-14-6.27-14-14C16,22.27,22.27,16,30,16z"></path>
+          <g class="rays stroke-current" data-svg-origin="30 30">
+            <line class="line" x1="30" y1="11" x2="30" y2="7"></line>
+            <line class="line" x1="43.44" y1="16.57" x2="46.26" y2="13.74" ></line>
+            <line class="line" x1="49" y1="30" x2="53" y2="30"></line>
+            <line class="line" x1="43.43" y1="43.44" x2="46.26" y2="46.26"></line>
+            <line class="line" x1="30" y1="49" x2="30" y2="53"></line>
+            <line class="line" x1="16.56" y1="43.43" x2="13.74" y2="46.26"></line>
+            <line class="line" x1="11" y1="30" x2="7" y2="30"></line>
+            <line class="line" x1="16.57" y1="16.56" x2="13.74" y2="13.74"></line>
+        </g>
+      </svg>
+    </div>
+  <div id="menu" class="flex flex-col fixed -translate-x-80 transition duration-300 md:translate-x-0 w-80 h-full bg-[#f5f5f5] dark:bg-[#262626] p-6 md:p-0 top-0 left-0
+    md:static md:w-60 md:shadow-none">
+    <div id="menuClose" class="absolute p-2 right-6 top-7 md:invisible">
+    <svg viewBox="0 0 12 12" class="w-4 h-4 overflow-visible"><path d="M0 0L10 10M10 0L0 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+    </div>
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+  </div>
+</header>

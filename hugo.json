@@ -1,0 +1,92 @@
+{
+  "baseURL": "https://waycrate.github.io/",
+  "languageCode": "en-us",
+  "title": "Waycrate",
+  "theme": "waycrate",
+  "menus": {
+    "main": [
+      {
+        "name": "Home",
+        "pageRef": "/",
+        "weight": 10,
+        "params": {
+          "icon": "fa-home"
+        }
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/waycrate/",
+        "params": {
+          "icon": "fa-github"
+        },
+        "weight": 20
+      },
+      {
+        "name": "Discord",
+        "url": "https://discord.gg/KKZRDYrRYW",
+        "params": {
+          "icon": "fa-brands fa-discord"
+        },
+        "weight": 20
+      },
+      {
+        "name": "Posts",
+        "pageRef": "/posts",
+        "weight": 20
+      },
+      {
+        "name": "GSoC 2024",
+        "weight": 30
+      },
+      {
+        "name": "Idea List",
+        "parent": "GSoC 2024",
+        "pageRef": "/outreach/gsoc/2024/idea-list/",
+        "weight": 10
+      },
+      {
+        "name": "Contributor Guide",
+        "parent": "GSoC 2024",
+        "pageRef": "/outreach/gsoc/2024/contributor-proposal-guidance/",
+        "weight": 20
+      },
+      {
+        "name": "2024 Contributors",
+        "parent": "GSoC 2024",
+        "pageRef": "/outreach/gsoc/2024/contributors/",
+        "weight": 30
+      },
+      {
+        "name": "2024 Submissions",
+        "parent": "GSoC 2024",
+        "pageRef": "/outreach/gsoc/2024/submissions/",
+        "weight": 30
+      }
+    ]
+  },
+
+   "markup": {
+      "highlight": {
+         "anchorLineNos": false,
+         "codeFences": true,
+         "guessSyntax": false,
+         "hl_Lines": "",
+         "hl_inline": false,
+         "lineAnchors": "",
+         "lineNoStart": 1,
+         "lineNos": false,
+         "lineNumbersInTable": true,
+         "noClasses": false,
+         "noHl": false,
+         "style": "monokai",
+         "tabWidth": 4
+      }
+   },
+ 
+  "module": {
+    "hugoVersion": {
+      "extended": false,
+      "min": "0.116.0"
+    }
+  }
+}

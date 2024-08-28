@@ -1,14 +1,13 @@
-# [waycrate.github.io](https://waycrate.github.io/)
+### Getting Started
 
-The site for the Waycrate organization, built with the
-[Eleventy](https://www.11ty.dev/) static site generator.
+- Install hugo (or use the flake)
 
-## Development steps:
+```sh
+hugo serve -D
+```
 
-```git clone git@github.com:waycrate/waycrate.github.io.git```
+Additionally, run the following to watch any style changes with tailwindcss:
 
-```cd waycrate.github.io```
-
-```npm install```
-
-```npm run serve```
+```sh
+tailwindcss watch -i ./themes/waycrate/assets/css/input.css -o ./themes/waycrate/assets/css/main.css
+```
