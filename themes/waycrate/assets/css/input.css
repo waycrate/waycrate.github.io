@@ -48,7 +48,7 @@ h6:not(:first-child) {
 }
 
 pre {
-  @apply my-4 p-4 text-base rounded transition;
+  @apply my-4 p-4 text-base rounded transition overflow-x-scroll bg-[#e7e7e7] dark:bg-[#363636];
 }
 
 pre > code {
