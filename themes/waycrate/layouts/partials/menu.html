@@ -33,26 +33,25 @@ Renders a menu for the given menu ID.
     {{- end }}
     <li>
       <a
-      class="
-        {{ if .HasChildren }}
-          font-semibold
-        {{ end }}
-        {{ if not (or .Page .URL) }}
-          border-none hover:border-none
-        {{ end }}
-        "
+      class="{{ if .HasChildren }} font-semibold {{ end }}
+             {{ if not (or .Page .URL) }}
+                border-none hover:border-none
+             {{ end }}"
         {{- range $k, $v := $attrs }}
           {{- with $v }}
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
           {{- end }}
         {{- end -}}
       >
-        {{ if .Params.icon }}
-          {{ with .Params.icon }}
-          <i class="fa {{ . }}" aria-hidden="true"></i>
+        {{ with .Params.icon }}
+          {{ if . }}
+            <i class="fa {{ . }}" aria-hidden="true"></i>
           {{ end }}
         {{ end }}
         {{ $name }}
+        {{ if or ($page.IsMenuCurrent .Menu .) ($page.HasMenuCurrent .Menu .) }}
+        <i class="fa fa-caret-left" aria-hidden="true"></i>
+        {{ end }}
       </a>
       {{- with .Children }}
         <ul class="ml-4 list-none">
