@@ -1,9 +1,6 @@
 ---
-layout: layout.njk
-title: GSOC 2024 Contributors for Waycrate
+title: GSOC 2024 Contributors Selected!
 ---
-
-# GSOC 2024 Contributors Selected!
 
 Greetings Everyone!
 
