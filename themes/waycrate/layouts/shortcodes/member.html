@@ -1,4 +1,4 @@
-<div class="inline-flex flex-col items-center">
+<div class="inline-flex flex-col items-center p-4">
   {{ if .Get "url" }}
     <a class="border-none hover:border-none" {{ with .Get "url" }} href="{{ . | safeURL }}" {{ end }}>
   {{ end }}
