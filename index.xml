@@ -1,10 +1,69 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Waycrate</title><link>https://waycrate.github.io/</link><description>Recent content on Waycrate</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://waycrate.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Contributor proposal guidance</title><link>https://waycrate.github.io/outreach/gsoc/2024/contributor-proposal-guidance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2024/contributor-proposal-guidance/</guid><description>Hi! Thank you for considering to contribute to the Waycrate organization!
-This page will document the general structure of your GSoC proposal.
-Proposal structure: Contact Information Project Proposal Brief Résumé / CV Related Experience Why GSoC with Waycrate? Proposal Motivation Detailed description Project timeline plan Prior commitments and availability Once you’ve selected a project assignment from the ideas page, please include a well-defined, weekly schedule with clear milestones and deliverables around it.</description></item><item><title>GSoC 2024 cohort idea list</title><link>https://waycrate.github.io/outreach/gsoc/2024/idea-list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2024/idea-list/</guid><description>Idea 1: Introduce DMA-BUF backend in Wayshot for high performance screen capture Possible Mentor(s) Zubair Mohammed zubair.mh@protonmail.com Aakash Sen Sharma aakashsensharma@gmail.com Angelo Fallaria ba.fallaria@gmail.com Difficulty: Hard Project Size: Large (350 hours) Skills: Rust Description: Currently Wayshot performs image capturing and transformations through the CPU, causing bottlenecking.
-This idea will implement a DMA-BUF backend and a client-side API for high performance image capturing and transformations on the GPU. The new backend and api should enable high performance streaming over applications like OBS using our custom desktop portal backend.</description></item><item><title>GSOC 2024 Contributors for Waycrate</title><link>https://waycrate.github.io/outreach/gsoc/2024/contributors/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2024/contributors/</guid><description>GSOC 2024 Contributors Selected! Greetings Everyone!
-Waycrate is thrilled to announce the selection of contributors for Google Summer of Code 2024! We are incredibly excited to welcome these talented individuals to our team as they embark on their respective projects throughout the summer.
-Meet the Selected Contributors We are proud to introduce the following individuals who have been chosen:
-Himadri Bhattacharjee joshiishan Sooraj S Please join us in extending a warm welcome to our GSOC 2024 contributors!</description></item><item><title>Project 1 - Introduce DMA-BUF backend in Wayshot for high performance screen capture</title><link>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-1-sooraj/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-1-sooraj/</guid><description>Mentor: Zubair Mohammed
-Student: Sooraj S
-Original writeup is hosted at https://cheerfulpianissimo.github.io/notes/GSOC/GSOC.html</description></item><item><title>Project 2 - Improving the security model of swhkd</title><link>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-2-ishan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-2-ishan/</guid><description>Improving the security model of swhkd Mentors: Aakash Sen Sharma Student: Ishan Joshi Over the past few months, I have been working on a lot of different changes to the swhkd codebase. Me and my mentor together have gone through various approachs that could be used to simplify the swhkd codebase and also improve it&amp;rsquo;s security model. The journey has been thoroughly documented and ordered, including all of the mistakes that I made and the things that I learnt on this site itself.</description></item><item><title>Project 3 - Formalize SWHKD parser using regular grammar notation</title><link>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-3-himadri/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-3-himadri/</guid><description>Overview Hello and welcome to the final GSoC post for 2024! My task was to formalize the SWHKD parser using context-free EBNF notation. This post is to serve as a birdseye view of what I have developed over this summer.
-Mentors: Aakash Sen Sharma Student: Himadri Bhattacharjee Report Architecting the parser I started out with the scaffolding of the parser in an extended Backus-Naur form garmmar template in a separate repository called SWEET using a Rust framework called pest.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Waycrate</title><link>https://waycrate.github.io/</link><description>Recent content on Waycrate</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://waycrate.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Contributor proposal guidance</title><link>https://waycrate.github.io/outreach/gsoc/2024/contributor-proposal-guidance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2024/contributor-proposal-guidance/</guid><description>&lt;p>Hi! Thank you for considering to contribute to the Waycrate organization!&lt;/p>
+&lt;p>This page will document the general structure of your GSoC proposal.&lt;/p>
+&lt;h2 id="proposal-structure">Proposal structure:&lt;/h2>
+&lt;ol>
+&lt;li>Contact Information&lt;/li>
+&lt;li>Project Proposal Brief&lt;/li>
+&lt;li>Résumé / CV&lt;/li>
+&lt;li>Related Experience&lt;/li>
+&lt;li>Why GSoC with Waycrate?&lt;/li>
+&lt;li>Proposal
+&lt;ul>
+&lt;li>Motivation&lt;/li>
+&lt;li>Detailed description&lt;/li>
+&lt;li>Project timeline plan&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Prior commitments and availability&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;ul>
+&lt;li>
+&lt;p>Once you’ve selected a project assignment from the ideas page, please include a well-defined, weekly schedule with clear milestones and deliverables around it.&lt;/p></description></item><item><title>GSoC 2024 cohort idea list</title><link>https://waycrate.github.io/outreach/gsoc/2024/idea-list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2024/idea-list/</guid><description>&lt;h2 id="idea-1-introduce-dma-buf-backendhttpswaylandappprotocolswlr-export-dmabuf-unstable-v1-in-wayshot-for-high-performance-screen-capture">Idea 1: Introduce &lt;a href="https://wayland.app/protocols/wlr-export-dmabuf-unstable-v1">DMA-BUF backend&lt;/a> in Wayshot for high performance screen capture&lt;/h2>
+&lt;h3 id="possible-mentors">Possible Mentor(s)&lt;/h3>
+&lt;ul>
+&lt;li>Zubair Mohammed &lt;a href="mailto:zubair.mh@protonmail.com">zubair.mh@protonmail.com&lt;/a>&lt;/li>
+&lt;li>Aakash Sen Sharma &lt;a href="mailto:aakashsensharma@gmail.com">aakashsensharma@gmail.com&lt;/a>&lt;/li>
+&lt;li>Angelo Fallaria &lt;a href="mailto:ba.fallaria@gmail.com">ba.fallaria@gmail.com&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="difficulty-hard">Difficulty: Hard&lt;/h3>
+&lt;h3 id="project-size-large-350-hours">Project Size: Large (350 hours)&lt;/h3>
+&lt;h3 id="skills-rust">Skills: Rust&lt;/h3>
+&lt;h3 id="description">Description:&lt;/h3>
+&lt;p>Currently Wayshot performs image capturing and transformations through the CPU, causing bottlenecking.&lt;/p>
+&lt;p>This idea will implement a DMA-BUF backend and a client-side API for high performance image capturing and transformations on the GPU. The new backend and api should enable high performance streaming over applications like &lt;a href="https://github.com/obsproject/obs-studio">OBS&lt;/a> using &lt;a href="https://github.com/waycrate/xdg-desktop-portal-luminous">our custom desktop portal backend&lt;/a>.&lt;/p></description></item><item><title>GSOC 2024 Contributors Selected!</title><link>https://waycrate.github.io/outreach/gsoc/2024/contributors/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2024/contributors/</guid><description>&lt;p>Greetings Everyone!&lt;/p>
+&lt;p>Waycrate is thrilled to announce the selection of contributors for Google Summer of Code 2024! We are incredibly excited to welcome these talented individuals to our team as they embark on their respective projects throughout the summer.&lt;/p>
+&lt;h2 id="meet-the-selected-contributors">Meet the Selected Contributors&lt;/h2>
+&lt;p>We are proud to introduce the following individuals who have been chosen:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Himadri Bhattacharjee&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>joshiishan&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Sooraj S&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>Please join us in extending a warm welcome to our GSOC 2024 contributors! We eagerly anticipate the valuable contributions they will make to Waycrate. Let&amp;rsquo;s make this summer memorable and productive!
+Happy coding!&lt;/p></description></item><item><title>Project 1 - Introduce DMA-BUF backend in Wayshot for high performance screen capture</title><link>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-1-sooraj/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-1-sooraj/</guid><description>&lt;p>Mentor: Zubair Mohammed&lt;br>
+Student: Sooraj S&lt;/p>
+&lt;p>Original writeup is hosted at &lt;a href="https://cheerfulpianissimo.github.io/notes/GSOC/GSOC.html">https://cheerfulpianissimo.github.io/notes/GSOC/GSOC.html&lt;/a>&lt;/p></description></item><item><title>Project 2 - Improving the security model of swhkd</title><link>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-2-ishan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-2-ishan/</guid><description>&lt;h1 id="improving-the-security-model-of-swhkd">Improving the security model of swhkd&lt;/h1>
+&lt;ul>
+&lt;li>&lt;strong>Mentors&lt;/strong>: Aakash Sen Sharma&lt;/li>
+&lt;li>&lt;strong>Student&lt;/strong>: Ishan Joshi&lt;/li>
+&lt;/ul>
+&lt;p>Over the past few months, I have been working on a lot of different changes to the swhkd codebase.
+Me and my mentor together have gone through various approachs that could be used to simplify the swhkd codebase
+and also improve it&amp;rsquo;s security model.
+The journey has been thoroughly documented and ordered, including all of the mistakes that I made and the things that I learnt on
+this site itself.
+This changelog attempts to summarize all of the changes that have been made in the codebase and the reasons behind them.
+This changelog will be mirrored over to a Github gist and will be submitted as the final report for the project.&lt;/p></description></item><item><title>Project 3 - Formalize SWHKD parser using regular grammar notation</title><link>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-3-himadri/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-3-himadri/</guid><description>&lt;h1 id="overview">Overview&lt;/h1>
+&lt;p>Hello and welcome to the final GSoC post for 2024! My task was to formalize the SWHKD parser using context-free EBNF notation. This post is to serve as a birdseye view of what
+I have developed over this summer.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Mentors&lt;/strong>: Aakash Sen Sharma&lt;/li>
+&lt;li>&lt;strong>Student&lt;/strong>: Himadri Bhattacharjee&lt;/li>
+&lt;/ul>
+&lt;h1 id="report">Report&lt;/h1>
+&lt;h2 id="architecting-the-parser">Architecting the parser&lt;/h2>
+&lt;p>I started out with the scaffolding of the parser in an extended Backus-Naur form garmmar template
+in a separate repository called &lt;a href="https://github.com/waycrate/sweet">SWEET&lt;/a> using a Rust framework
+called &lt;a href="https://pest.rs">pest.rs&lt;/a>. Quite a lot of time was
+spent in modelling the architecture of the syntax tree for our domain specific language.&lt;/p></description></item></channel></rss>
