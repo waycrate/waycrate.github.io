@@ -19,6 +19,27 @@
 &lt;hr>
 &lt;ul>
 &lt;li>
+&lt;p>Once you’ve selected a project assignment from the ideas page, please include a well-defined, weekly schedule with clear milestones and deliverables around it.&lt;/p></description></item><item><title>Contributor proposal guidance</title><link>https://waycrate.github.io/outreach/gsoc/2025/contributor-proposal-guidance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2025/contributor-proposal-guidance/</guid><description>&lt;p>Hi! Thank you for considering to contribute to the Waycrate organization!&lt;/p>
+&lt;p>This page will document the general structure of your GSoC proposal.&lt;/p>
+&lt;h2 id="proposal-structure">Proposal structure:&lt;/h2>
+&lt;ol>
+&lt;li>Contact Information&lt;/li>
+&lt;li>Project Proposal Brief&lt;/li>
+&lt;li>Résumé / CV&lt;/li>
+&lt;li>Related Experience&lt;/li>
+&lt;li>Why GSoC with Waycrate?&lt;/li>
+&lt;li>Proposal
+&lt;ul>
+&lt;li>Motivation&lt;/li>
+&lt;li>Detailed description&lt;/li>
+&lt;li>Project timeline plan&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Prior commitments and availability&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;ul>
+&lt;li>
 &lt;p>Once you’ve selected a project assignment from the ideas page, please include a well-defined, weekly schedule with clear milestones and deliverables around it.&lt;/p></description></item><item><title>GSoC 2024 cohort idea list</title><link>https://waycrate.github.io/outreach/gsoc/2024/idea-list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2024/idea-list/</guid><description>&lt;h2 id="idea-1-introduce-dma-buf-backendhttpswaylandappprotocolswlr-export-dmabuf-unstable-v1-in-wayshot-for-high-performance-screen-capture">Idea 1: Introduce &lt;a href="https://wayland.app/protocols/wlr-export-dmabuf-unstable-v1">DMA-BUF backend&lt;/a> in Wayshot for high performance screen capture&lt;/h2>
 &lt;h3 id="possible-mentors">Possible Mentor(s)&lt;/h3>
 &lt;ul>
@@ -41,7 +62,19 @@
 &lt;li>&lt;strong>Sooraj S&lt;/strong>&lt;/li>
 &lt;/ol>
 &lt;p>Please join us in extending a warm welcome to our GSOC 2024 contributors! We eagerly anticipate the valuable contributions they will make to Waycrate. Let&amp;rsquo;s make this summer memorable and productive!
-Happy coding!&lt;/p></description></item><item><title>Project 1 - Introduce DMA-BUF backend in Wayshot for high performance screen capture</title><link>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-1-sooraj/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-1-sooraj/</guid><description>&lt;p>Mentor: Zubair Mohammed&lt;br>
+Happy coding!&lt;/p></description></item><item><title>GSoC 2025 cohort idea list</title><link>https://waycrate.github.io/outreach/gsoc/2025/idea-list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2025/idea-list/</guid><description>&lt;h2 id="idea-1-introduce-ext_image_capture_source_v1httpswaylandappprotocolsext-image-capture-source-v1ext_image_capture_source_v1-protocol-support-in-wayshot-and-improve-security-features">Idea 1: Introduce &lt;a href="https://wayland.app/protocols/ext-image-capture-source-v1#ext_image_capture_source_v1">ext_image_capture_source_v1&lt;/a> protocol support in Wayshot and improve security features&lt;/h2>
+&lt;h3 id="possible-mentors">Possible Mentors:&lt;/h3>
+&lt;ul>
+&lt;li>Rachancheet Singh Kohli (rachancheet37 [at] gmail.com)&lt;/li>
+&lt;li>Aakash Sen Sharma (aakashsensharma [at] gmail.com)&lt;/li>
+&lt;li>Ishan Joshi (joshiishan246890 [at] gmail.com)&lt;/li>
+&lt;/ul>
+&lt;h3 id="difficulty-hard">Difficulty: Hard&lt;/h3>
+&lt;h3 id="project-size-large-350-hours">Project Size: Large (350 Hours)&lt;/h3>
+&lt;h3 id="pre-requisite-skills-rust-wayland-protocols--optional-">Pre-requisite Skills: Rust, Wayland Protocols ( Optional )&lt;/h3>
+&lt;h3 id="description">Description:&lt;/h3>
+&lt;p>The ext_image_capture_source_v1 protocol has recently been introduced to Wayland, providing a standardized method for display and top-level window capture.
+Wayshot currently supports CPU-based and GPU-based capture over wlr-screencopy protocol which is non-standard. Adopting the official protocol offers toplevel capture capabilities natively and improves the user experience.&lt;/p></description></item><item><title>Project 1 - Introduce DMA-BUF backend in Wayshot for high performance screen capture</title><link>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-1-sooraj/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-1-sooraj/</guid><description>&lt;p>Mentor: Zubair Mohammed&lt;br>
 Student: Sooraj S&lt;/p>
 &lt;p>Original writeup is hosted at &lt;a href="https://cheerfulpianissimo.github.io/notes/GSOC/GSOC.html">https://cheerfulpianissimo.github.io/notes/GSOC/GSOC.html&lt;/a>&lt;/p></description></item><item><title>Project 2 - Improving the security model of swhkd</title><link>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-2-ishan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://waycrate.github.io/outreach/gsoc/2024/submissions/project-2-ishan/</guid><description>&lt;h1 id="improving-the-security-model-of-swhkd">Improving the security model of swhkd&lt;/h1>
 &lt;ul>
